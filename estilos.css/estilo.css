@@ -639,7 +639,8 @@ header{width: 100%;}
               flex-wrap: wrap;
               text-align: center;
                 gap: 50px;
-              font-size: 20px;}
+              font-size: 20px;
+              }
              
               .argumentoTexto{
                   margin-top: 50px;
@@ -817,6 +818,9 @@ header{width: 100%;}
                 @media only screen and (min-width: 1342px) {.pelicula8{
                         background-image:url('/images/bkg7.jpg');background-size: cover; }}
 
+                @media only screen and (min-width: 1342px) {.pelicula9{
+                        background-image:url('/images/bkg8.jpg');background-size: cover;background-position: center; }}
+
 
                 @media only screen and (max-width: 388px) {.pelicula3 h2 {font-size: 20px;}}
 
@@ -837,7 +841,15 @@ header{width: 100%;}
                    }
 
                   @media only screen and (min-width:1119px){ .textoIntroduccion{font-size: 30px;}}
-    
+
+                  @media only screen and (min-width: 1342px) {  .argumentoHijo{font-size: 26px;}  }
+                  
+                  @media only screen and (max-width: 725px) and (min-width: 662px) {.trailerContenedor{margin-top: 25px;}
+                  
+                  }
+                  
+                  
+  
    
 
                         
