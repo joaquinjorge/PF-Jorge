@@ -153,6 +153,10 @@ header{width: 100%;}
        .carusel2b{background-image: url('/images/724130.jpg');background-size: cover;background-position: center;height: 400px;}
 
        .carusel2c{background-image: url('/images/801816.jpg');background-size: cover;background-position: center;height: 400px;}
+
+       .carusel2d{background-image: url('/images/75842.jpg');background-position: center;background-size: cover;height: 400px;}
+
+       .carusel2e{background-image: url('/images/689398.jpg');background-position: center;background-size: cover;height: 400px;}
        
 
 
@@ -842,11 +846,16 @@ header{width: 100%;}
                         
                 @media only screen and (max-width: 282px) {.calidad {display: none;}}
 
-                @media only screen and (min-width:1119px) {.caruselTamaño{height: 700px;}
-                  .section1{justify-content: flex-end;height: 700px;}.carusel1,.carusel2a, .carusel2b, .carusel2c{height:100%;}
+                @media only screen and (min-width:909px) {.caruselTamaño{height: 100vh;}
+
+                  .section1{justify-content: flex-end;height: 100vh;}.carusel1,.carusel2a, .carusel2b, .carusel2c, .carusel2d, .carusel2e{height:100%;}
                    }
 
-                  @media only screen and (min-width:1119px){ .textoIntroduccion{font-size: 30px;}}
+                  @media only screen and (min-width:909px){ .textoIntroduccion{font-size: 30px;}}
+
+                  @media only screen and (max-width: 991px) and (min-width:909px) {.section1{margin-top: 80px;}
+                  
+                  }
 
                   @media only screen and (min-width: 1342px) {  .argumentoHijo{font-size: 26px;}  }
                   
