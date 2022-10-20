@@ -405,7 +405,8 @@ header{width: 100%;}
                 "footerTendencia";
                 grid-template-columns: 100%;
                 grid-template-rows: auto auto auto; }
-            
+
+                
 
              .headerTendencia{grid-area: headerTendencia;}
 
@@ -650,6 +651,8 @@ header{width: 100%;}
 
                .argumentoHijob{margin-top: 20px;}
 
+               
+             
 
                /* MEDIA Y RESPONSIVE------------------------------------------------------ */
 
@@ -820,6 +823,9 @@ header{width: 100%;}
 
                 @media only screen and (min-width: 1342px) {.pelicula9{
                         background-image:url('/images/bkg8.jpg');background-size: cover;background-position: center; }}
+
+                @media only screen and (min-width: 1342px) {.pelicula10{
+                       background-image:url('/images/bkg9.jpg');background-size: cover; }}       
 
 
                 @media only screen and (max-width: 388px) {.pelicula3 h2 {font-size: 20px;}}
