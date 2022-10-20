@@ -856,6 +856,9 @@ header{width: 100%;}
                   @media only screen and (max-width: 991px) and (min-width:909px) {.section1{margin-top: 80px;}
                   
                   }
+                  @media only screen and (max-width: 991px) and (min-width:909px) {.primero{margin-top: 80px;}
+                  
+                }
 
                   @media only screen and (min-width: 1342px) {  .argumentoHijo{font-size: 26px;}  }
                   
