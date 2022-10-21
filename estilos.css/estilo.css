@@ -436,10 +436,9 @@ header{width: 100%;}
 
              .sectionTendencia{
                 height: 100%;
-                width: 90%;
-               display: flex;
-               flex-wrap: wrap;
-               gap: 40px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 40px;
                 padding-top: 20px ;
                 align-items: center;
                 justify-content: center;
