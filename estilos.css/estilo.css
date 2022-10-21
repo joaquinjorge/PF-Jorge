@@ -1,5 +1,8 @@
 *{margin: 0;padding: 0;box-sizing: border-box;font-family: 'calibri';}
 
+html {
+  scroll-behavior: smooth;}
+
   .cuerpo{
     
     grid-template-columns:auto;
@@ -224,15 +227,15 @@ header{width: 100%;}
 
         .section2Hijo{
             
-         height:350px;
+         height:400px;
          width: 230px;
          display: flex;
         flex-direction: column; }
 
-        .section2Hijo h3{margin-top: 5px;}
+       
 
         .divImagen{
-          height: 300px;
+          height: 350px;
           width: 100%;
           border: 5px solid #370617;
           border-radius: 4px;}
@@ -446,8 +449,8 @@ header{width: 100%;}
                 
                 
                 .tendenciaHijo{
-                  height:350px;
-                  width: 190px;
+                  height:400px;
+                  width: 220px;
                   display: flex;
                   flex-direction: column; }
 
@@ -871,9 +874,7 @@ header{width: 100%;}
                   
                   }
 
-                  @media only screen and (max-width: 466px) {.tendenciaHijo{width: 350px ;}}
-                  
-                  
+              
                   
                   
   
