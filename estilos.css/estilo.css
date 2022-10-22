@@ -169,6 +169,10 @@ header{width: 100%;}
         font-size: 25px;
         font-weight: 600
         ;color: #FFBA08;}
+
+        @media only screen and (max-width: 252px) {.descargaPopular p{font-size: 20px;}
+        
+        }
         
     
         .carusel1{background-image: url('/images/pexels-tima-miroshnichenko-7991436.jpg')
