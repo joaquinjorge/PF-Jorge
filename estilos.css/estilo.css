@@ -676,16 +676,23 @@ header{width: 100%;}
               flex-wrap: wrap;
               text-align: center;
                 gap: 50px;
-              font-size: 20px;
+                font-size: 20px;
+             
               }
              
               .argumentoTexto{
                   margin-top: 50px;
                   ;width: 100%;}
 
-              .argumentoTexto p{margin-top: 20px;}
+                  .argumentoTexto h3{font-size: 25px;}
 
-               .argumentoHijob{margin-top: 20px;}
+              .argumentoTexto p{margin-top: 20px;font-size: 20px;}
+
+               .argumentoHijob h3{margin-top: 20px;font-size: 25px;}
+
+               .argumentoHijoa h3{font-size: 25px;}
+
+               
 
                
              
@@ -902,7 +909,7 @@ header{width: 100%;}
                   
                 
 
-                  @media only screen and (min-width: 1342px) {  .argumentoHijo{font-size: 26px;}  }
+                  @media only screen and (min-width: 1342px) {  .argumentoHijo{font-size: 26px;}.argumentoHijo h3{font-size: 35px;}  }
                   
                   @media only screen and (max-width: 725px) and (min-width: 662px) {.trailerContenedor{margin-top: 25px;}
                   
