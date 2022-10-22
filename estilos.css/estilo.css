@@ -1,7 +1,8 @@
 *{margin: 0;padding: 0;box-sizing: border-box;font-family: 'calibri';}
 
 html {
-  scroll-behavior: smooth;}
+  scroll-behavior: smooth;
+   font-size: 100%;}
 
   .cuerpo{
     
@@ -718,10 +719,6 @@ header{width: 100%;}
                
             
               
-                @media only screen and (max-width: 1118px) and (min-width: 910px) {
-                  .section1 h2{font-size: 40px;}
-                
-                }
                
             
                 
