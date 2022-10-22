@@ -170,9 +170,7 @@ header{width: 100%;}
         font-weight: 600
         ;color: #FFBA08;}
 
-        @media only screen and (max-width: 252px) {.descargaPopular p{font-size: 20px;}
-        
-        }
+       
         
     
         .carusel1{background-image: url('/images/pexels-tima-miroshnichenko-7991436.jpg')
@@ -301,7 +299,8 @@ header{width: 100%;}
          color: grey;}
 
         .section2Hijo p{
-          color: rgb(153, 147, 147);}
+          color: rgb(153, 147, 147);font-size: 20px;}
+
      
         .section3{
          padding: 30px 0;}
@@ -461,7 +460,11 @@ header{width: 100%;}
                 text-align: center;
                 width: auto;
                 padding-top: 60px ;
-                font-size: 1.7em;}
+                font-size: 35px;
+                text-shadow: 1px 1px 20px  rgb(206, 193, 11);}
+
+
+              
 
                 .tendencia{background: linear-gradient(90deg, #000000, #232222);}
 
@@ -492,7 +495,8 @@ header{width: 100%;}
                         color: grey;}
             
                      .tendenciaHijo p{
-                        color: rgb(153, 147, 147);}
+                        color: rgb(153, 147, 147);
+                        font-size: 20px;}
 
 
                         .tendenciaHijo img:hover{
@@ -918,8 +922,14 @@ header{width: 100%;}
 
 
                   @media only screen and (max-width: 908px) {html{font-size: 70%;}
+
            
                 }
+
+            
+                  
+           
+              
      
                 @media only screen and (max-width: 448px) {html{font-size: 50%;}
                 
@@ -932,6 +942,20 @@ header{width: 100%;}
                 @media only screen and (max-width: 230px) {html{font-size: 50%;}
                 
                 }
+
+                @media only screen and (max-width: 252px) {.descargaPopular p{font-size: 20px;}
+        
+              }
+
+
+              @media only screen and (max-width: 234px)  { .h3Tendencia{
+                font-size:25px ;
+              }
+              
+              }
+
+             
+         
      
 
 
@@ -963,9 +987,11 @@ header{width: 100%;}
               .iconos i{font-size: 25px;padding-right: 12px;
                 ;}
 
-              .footerH2{color: white;}
+              .tituloFooter{color: white;font-size: 20px;}
          
-              .derechos p{color:whitesmoke;}
+              .derechos p{color:whitesmoke; font-size: 15px;}
+
+           
 
               .iconos a{text-decoration: none;color:white;}
 
@@ -978,6 +1004,12 @@ header{width: 100%;}
               .footerTendencia{background: linear-gradient(0deg, #370617, #080000);}
 
               .footerFormulario{background: linear-gradient(0deg, #370617, #080000);}
+
+              @media only screen and (max-width: 308px) {
+                .derechos p{color:whitesmoke; font-size: 12px;}
+              
+              }
+
 
             
             
