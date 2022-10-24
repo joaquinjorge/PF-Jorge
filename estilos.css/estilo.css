@@ -1,8 +1,10 @@
 *{margin: 0;padding: 0;box-sizing: border-box;font-family: 'calibri';}
 
+
 html {
   scroll-behavior: smooth;
-   font-size: 100%;}
+   font-size: 100%;
+    }
 
   .cuerpo{
     
@@ -81,9 +83,10 @@ header{width: 100%;}
       border-radius: 4px;
     box-shadow:  1px 0.5px 2px 2px #03071E; }
    
-    .buscarNav{
-      display: flex;
-      height: 30px;}
+    
+      @media only screen and (max-width: 991px)  {.navBoton{width: 200px;height:40px;font-size: 20px;}::placeholder{font-size: 18px;}
+      
+      }
 
 
     
@@ -128,6 +131,7 @@ header{width: 100%;}
             flex-direction: column;align-items: center;
             justify-content: center;
             height: 80%;
+         
             
             
           }
@@ -136,7 +140,27 @@ header{width: 100%;}
            text-shadow: 1px 2px black;
           }
 
-           .textoIntroduccion{font-size: 1.87rem;width: 80%;color: bisque;font-weight: 600;}
+           .textoIntroduccion{font-size: 1.87rem;width: 80%;color: rgb(255, 255, 255);font-weight: 600;}
+        @media only screen and (max-width: 1216px) and (min-width: 1100px) {
+          .heroTexto h2{font-size:3rem ;}
+        
+        }
+
+        @media only screen and (max-width: 1099px) and (min-width: 940px) {
+          .heroTexto h2{font-size:2.5rem ;}
+        
+        }
+
+        @media only screen and (max-width:939px) and (min-width: 658px) {
+          .heroTexto h2{font-size:2.6rem ;}
+        
+        }
+
+
+        @media only screen and (max-width:657px) and (min-width:480px) {
+          .heroTexto h2{font-size:2rem ;}.textoIntroduccion{font-size: 1.5rem;}
+        
+        }
 
 
 
@@ -624,11 +648,15 @@ header{width: 100%;}
 
              .iconosPeliculax{margin-left: 80px
                 ;margin-bottom: 200px;
-              height: 300px;}
+              height: 300px;
+            
+              
+              }
 
               .iconosPeliculax p{
                 font-size: 20px;
-                font-weight: 700; }
+                font-weight: 700;
+               }
             
 
               .bluray2{background-color: green;
@@ -878,7 +906,7 @@ header{width: 100%;}
 
                
 
-                @media only screen and (max-width: 388px) {.pelicula3 h2 {font-size: 20px;}}
+              
 
                       
                 @media only screen and (max-width: 991px) {.listaEnlaces li a{background: linear-gradient(90deg, #000000, #232222);justify-content: center;width: 100%;display: flex;}
@@ -931,7 +959,7 @@ header{width: 100%;}
            
               
      
-                @media only screen and (max-width: 448px) {html{font-size: 50%;}
+                @media only screen and (max-width: 479px) {html{font-size: 50%;}
                 
                 }
      
