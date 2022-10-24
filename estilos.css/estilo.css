@@ -553,7 +553,7 @@ header{width: 100%;}
 
          .footerPeliculax{grid-area: footerPeliculax;}
 
-
+         
          .caruselPelicula{margin-top: 96px;}
         
 
@@ -803,7 +803,7 @@ header{width: 100%;}
                     grid-template-rows:170px 480px auto auto}}
                
                
-                @media only screen and (max-width: 294px) { .mainPeliculax {
+                @media only screen and (max-width: 383px) { .mainPeliculax {
                   padding: 30px 0;
                   
                    display: grid;
@@ -821,7 +821,8 @@ header{width: 100%;}
                   
                
                 @media only screen and (max-width: 294px) {.iconosPeliculax{margin: auto;}}
-              
+
+           
            
 
                 @media only screen and (max-width: 661px) { .descargar {
