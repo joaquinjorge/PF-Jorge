@@ -35,7 +35,22 @@ html {
     overflow: hidden;
     width: 90%;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* nav----------------------------------------------------------------------------------- */
+
+
 header{width: 100%;}
 
 .navegacion{background: linear-gradient(0deg, #370617, #080000);height: auto;}
@@ -84,9 +99,7 @@ header{width: 100%;}
     box-shadow:  1px 0.5px 2px 2px #03071E; }
    
     
-      @media only screen and (max-width: 991px)  {.navBoton{width: 200px;height:40px;font-size: 20px;}::placeholder{font-size: 1.5em;}
-      
-      }
+     
 
 
     
@@ -96,10 +109,13 @@ header{width: 100%;}
    
    
         
+
+
   
       
      
       /* hero carusel imagenes------------------------------------------------------------------------------- */
+
     .caruselTamaño{height: 400px;}
 
     .section1{
@@ -147,27 +163,8 @@ header{width: 100%;}
           }
 
            .textoIntroduccion{font-size: 1.87rem;width: 80%;color: rgb(255, 255, 255);font-weight: 600;}
-        @media only screen and (max-width: 1216px) and (min-width: 1100px) {
-          .heroTexto h2{font-size:3em ;}
-        
-        }
 
-        @media only screen and (max-width: 1099px) and (min-width: 940px) {
-          .heroTexto h2{font-size:2.5em ;}
-        
-        }
-
-        @media only screen and (max-width:939px) and (min-width: 658px) {
-          .heroTexto h2{font-size:2.6em ;}
-        
-        }
-
-
-        @media only screen and (max-width:657px) and (min-width:480px) {
-          .heroTexto h2{font-size:2em ;}.textoIntroduccion{font-size: 1.5em;}
-        
-        }
-
+    
 
 
           
@@ -271,11 +268,11 @@ header{width: 100%;}
 
         .section2{
          height: 100%;
-         display:flex;
-         justify-content: center;
+         
+        
          gap: 20px;
          width: 100%;
-         flex-wrap: wrap; }
+         }
          
          
        
@@ -346,7 +343,15 @@ header{width: 100%;}
 
 
 
+
+
+
+
+
+
             /* -----------PAGINA FORMULARIO DE LOGIN/REGISTER------------- */
+
+
             .bodyFormulario{
               min-height: 100vh;
                
@@ -470,6 +475,7 @@ header{width: 100%;}
                            
                           
              /* ---------------------PAGINA TENDENCIAS --------*/  
+
              .bodyTendencia{
                 display: grid;
                 grid-template-areas: 
@@ -495,47 +501,40 @@ header{width: 100%;}
                 font-size: 35px;
                 text-shadow: 1px 1px 20px  rgb(206, 193, 11);}
 
-
+                .mainTendencia{background: linear-gradient(90deg, #000000, #232222);}
               
-
-                .tendencia{background: linear-gradient(90deg, #000000, #232222);}
-
-
-             .sectionTendencia{
-                height: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                gap: 40px;
-                padding-top: 20px ;
-                align-items: center;
-                justify-content: center;
-                max-width: 1300px; }
+                .row{margin-bottom: 30px;}
                 
                 
-                .tendenciaHijo{
-                  height:400px;
-                  width: 220px;
-                  display: flex;
-                  flex-direction: column; }
+                  
+                .col a{
+                 text-decoration: none;
+                  color: white;
+                 font-size: 24px;}
+         
+                  .col a:hover{
+                     color: grey;}
+         
+                  .col p{
+                     color: rgb(153, 147, 147);}
 
-                   .tendenciaHijo a{
-                    text-decoration: none;
-                     color: white;
-                    font-size: 24px;}
-            
-                     .tendenciaHijo a:hover{
-                        color: grey;}
-            
-                     .tendenciaHijo p{
-                        color: rgb(153, 147, 147);
-                        font-size: 20px;}
+                     .col p{font-size:16px;}
 
 
-                        .tendenciaHijo img:hover{
-                            
-                            transform: scale(1.05);
-                            transition: transform 1s; }
-                       
+                     .col img:hover{
+                         
+                         transform: scale(1.05);
+                         transition: transform 1s; }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -685,6 +684,9 @@ header{width: 100%;}
                   width: 200px;
                   height: 300px;
                   color: white; }
+
+
+                  .calidad{display: flex;}
                   
                  .porcentaje{display: flex;
                   gap: 40px;}
@@ -703,7 +705,8 @@ header{width: 100%;}
                     height: auto;
                     display: flex;
                     gap: 5px; 
-                    background-color:black;}
+                    background-color:black;
+                    margin-top: 20px;}
                  
                   .trailerVideo{
                     width: 33%;
@@ -738,286 +741,19 @@ header{width: 100%;}
 
                .argumentoHijoa h3{font-size: 25px;}
 
-               
 
-               
-             
 
-               /* MEDIA Y RESPONSIVE------------------------------------------------------ */
 
 
 
-                
-                @media only screen and (min-width: 992px) {.botonToggle{display: none;}}
- 
-                @media only screen and (min-width: 992px) {.carusel{margin-top: 6em;}}
 
-                @media only screen and (min-width: 1205px) {.logo{
-                animation: mover 3s alternate-reverse infinite;
-                transition: 8s; }  }
-            
-                @media only screen and (min-width: 1024px) {@keyframes mover {from{transform: translateX(0);}
-                to{transform: translateX(200px)  ;} } }
 
 
 
-               
-            
-              
-               
-            
-                
-               
-                
 
-              
 
-                @media screen and (max-width:285px){.section1 h2{display: none;}}
 
-               
-            
-                @media screen and (max-width:619px){.bodyFormulario{background-color:black;}
-                .seccionFormulario{height: 100%; ;}}
-            
-            
-                
-                @media only screen and (max-width: 329px) {.textoFooter{font-size: 0.93em;}  }
-                
-                @media only screen and (max-width: 661px) { .mainPeliculax {
-                    padding: 1.87em 0;
-                   background-position: center;
-                   background-size: cover;
-                    
-                     display: grid;
-                     grid-template-areas: 
-                     "tituloPeliculax"
-                     "primeroPeliculax"
-                     "iconosPeliculax"
-                     "argumentoPeliculax";
-
-                     grid-template-columns: auto;
-
-                     grid-template-rows:20em 70em auto auto}}
-                     
-                @media only screen and (max-width: 661px) and (min-width:511px) {
-
-                 .mainPeliculax {
-                  padding: 1.87em 0;
-                   display: grid;
-                   grid-template-areas: 
-                    "tituloPeliculax tituloPeliculax"
-                    "primeroPeliculax iconosPeliculax"
-                   "argumentoPeliculax argumentoPeliculax";
-                   grid-template-columns: auto;
-                    grid-template-rows:20em 49em auto }}
-               
-               
-                @media only screen and (max-width: 383px) { .mainPeliculax {
-                  padding: 1.87em 0;
-                   display: grid;
-                   grid-template-areas: 
-                   "tituloPeliculax"
-                   "primeroPeliculax"
-                   "iconosPeliculax"
-                   "argumentoPeliculax";
-
-                   grid-template-columns: 100%;
-
-                   grid-template-rows:40em 58em auto auto}}
-                   
-                   
-                  
-               
-                @media only screen and (max-width: 294px) {.iconosPeliculax{margin: auto;}}
-
-           
-           
-
-                @media only screen and (max-width: 661px) { .descargar {
-                    width:242px;} .tituloPeliculax {
-                      margin-left: 0;}.iconosPeliculax {
-                        margin: auto;margin-left: 0;}}
-                
-
-                
-               
-
-
-                 
-                @media only screen and (max-width: 661px) { .trailerContenedor {
-                    flex-direction: column;width: 100%;
-                    align-items: center;} .trailerVideo {
-                      width: 80%;}.trailerImagen{width: 80%;}}
-
-
-                  @media only screen and (max-width: 661px) {.trailerImagen
-                    {height: 12em;}
-                  
-                  }    
-                    
-                
-            
-                
-                @media only screen and (max-width: 358px) { .trailerContenedor {
-                    margin-top: 8em;}}
-              
-
-
-
-                @media only screen and (max-width:267px) { .imagenPeliculax {width:100%;}
-                .descargar {width:100%;}}
-
-
-             
-
-                @media only screen and (min-width: 1342px) {
-                    .trailerImagen img:hover{transform: scale(1.1);
-                    transition: 2s;}}
-                   
-                 
-
-                @media only screen and (min-width: 1342px) {.mainPeliculax{
-                    background-image:url('/images/cropped-1200-1118-1116286.jpg') ;}
-                    .pelicula2{
-                      background-image:url('/images/bkg1.jpg');background-size: cover;background-position: center;}
-                      .pelicula3{
-                        background-image:url('/images/bkg2.jpg') ;background-size: cover;background-position: center;}
-                        .pelicula4{
-                          background-image:url('/images/bkg3.jpg') ;background-size: cover;background-position: center;}
-                          .pelicula5{
-                            background-image:url('/images/bkg4.jpg') ;background-size: cover;background-position: center;}
-                            .pelicula6{
-                              background-image:url('/images/bkg5.jpg') ;background-size: cover;} 
-                              .pelicula7{
-                                background-image:url('/images/bk6.jpg') ;}
-                                .pelicula8{
-                                  background-image:url('/images/bkg7.jpg');background-size: cover; }
-                                  .pelicula9{
-                                    background-image:url('/images/bkg8.jpg');background-size: cover;background-position: center; }
-                                    .pelicula10{
-                                      background-image:url('/images/bkg9.jpg');background-size: cover; } 
-                                     }
-                            
-                  
-                    
-                 
-
-                @media only screen and (max-width: 1342px) {.bodyPeliculax{background-color: rgb(14, 9, 9);}}
-                   
-                  
-
-
-                      
-               
-                
-                 
-
-
-                        
-              
-
-
-                
-
-               
-
-              
-
-                      
-                @media only screen and (max-width: 991px) {.listaEnlaces li a{background: linear-gradient(90deg, #000000, #232222);justify-content: center;width: 100%;display: flex;}
-                .logo{display: none;}}
-                        
-                      
-              
-
-
-                @media only screen and (max-width: 281px) { .porcentaje p{font-size:2em;}
-                .calidad {display: none;}}
-                        
-                        
-               
-
-              
-
-        
-
-                  
-                @media only screen and (max-width: 282px) {.calidad {display: none;}}
-             
-
-               
-
-                 
-                  
-                  
-                  @media only screen and (min-width:909px) {.caruselTamaño{height: 100vh;}
-
-                  .carusel1,.carusel2a, .carusel2b, .carusel2c, .carusel2d, .carusel2e{height:100vh;}
-                   }                  
-                  
-                
-
-                  @media only screen and (min-width: 1342px) {  .argumentoHijo{font-size: 26px;}.argumentoHijo h3{font-size: 35px;}  }
-                  
-                  @media only screen and (max-width: 725px) and (min-width: 662px) {.trailerContenedor{margin-top: 3em}
-                  
-                  }
-
-
-                  @media only screen and (max-width: 908px) {html{font-size: 70%;}
-
-           
-                }
-
-            
-                  
-           
-              
-     
-                @media only screen and (max-width: 479px) {html{font-size: 50%;}
-                
-                }
-     
-                @media only screen and (max-width: 285px) {html{font-size: 60%;}
-                
-                }
-     
-                @media only screen and (max-width: 230px) {html{font-size: 50%;}
-                
-                }
-
-                @media only screen and (max-width: 252px) {.descargaPopular p{font-size: 2.2em;}
-        
-              }
-
-
-              @media only screen and (max-width: 234px)  { .h3Tendencia{
-                font-size:2.5em ;
-              }
-              
-              }
-
-             
-         
-     
-
-
-                 
-
-              
-
-
-              
-                  
-                  
-  
-   
-
-                        
-                        
-                      
-
-            /* FOOTER--------------------- ----------------------------------------------------*/
+                    /* FOOTER--------------------- ----------------------------------------------------*/
               .footerIndex,.footerFormulario,.footerTendencia,.footerPeliculax{
                 display: flex;
                 flex-direction: column;
@@ -1048,10 +784,431 @@ header{width: 100%;}
 
               .footerFormulario{background: linear-gradient(0deg, #370617, #080000);}
 
-              @media only screen and (max-width: 308px) {
-                .derechos p{color:whitesmoke; font-size: 1.4em;}
+               
+
+               
+             
+
+               
+
+
+
+                
               
-              }
+ 
+                
+         
+            
+              
+
+
+
+                /* MEDIA Y RESPONSIVE  HEADER de todas las paginas------------------------------------------------------ */
+                @media only screen and (min-width: 992px) {.botonToggle{display: none;}}
+
+                @media only screen and (min-width: 1205px) {.logo{
+                  animation: mover 3s alternate-reverse infinite;
+                  transition: 8s; }  }
+                  
+                @media only screen and (min-width: 1024px) {@keyframes mover {from{transform: translateX(0);}
+                to{transform: translateX(200px)  ;} } }
+
+                @media only screen and (max-width: 991px) {.listaEnlaces li a{background: linear-gradient(90deg, #000000, #232222);justify-content: center;width: 100%;display: flex;}
+                .logo{display: none;}}
+
+                @media only screen and (max-width: 991px)  {.navBoton{width: 200px;height:40px;font-size: 20px;}::placeholder{font-size: 1.5em;}  }
+
+
+
+
+
+
+                    /* MEDIA Y RESPONSIVE  INDEX.HTML ------------------------------------------------------- */
+
+                    @media only screen and (max-width: 1216px) and (min-width: 1100px) {
+                      .heroTexto h2{font-size:3em ;}
+                    
+                    }
+            
+                    @media only screen and (max-width: 1099px) and (min-width: 940px) {
+                      .heroTexto h2{font-size:2.5em ;}
+                    
+                    }
+            
+                    @media only screen and (max-width:939px) and (min-width: 658px) {
+                      .heroTexto h2{font-size:2.6em ;}
+                    
+                    }
+            
+            
+                    @media only screen and (max-width:657px) and (min-width:480px) {
+                      .heroTexto h2{font-size:2em ;}.textoIntroduccion{font-size: 1.5em;}
+                    
+                    }
+
+                    @media screen and (max-width:285px){.section1 h2{display: none;}}
+
+                    @media only screen and (max-width: 252px) {.descargaPopular p{font-size: 2.2em;}
+        
+                  }
+
+                    @media only screen and (min-width: 992px) {.carusel{margin-top: 6em;}}
+
+                    @media only screen and (min-width:909px) {.caruselTamaño{height: 100vh;}
+
+                    .carusel1,.carusel2a, .carusel2b, .carusel2c, .carusel2d, .carusel2e{height:100vh;}
+                     }     
+                     
+                     
+
+
+
+                      /* MEDIA Y RESPONSIVE  FORMULARIO.HTML ------------------------------------------------------- */
+
+                      @media screen and (max-width:619px){.bodyFormulario{background-color:black;}
+                     .seccionFormulario{height: 100%; ;}}
+
+
+                     /* MEDIA Y RESPONSIVE  TENDENCIAS.HTML ------------------------------------------------------- */
+
+                     @media only screen and (max-width: 234px)  { .h3Tendencia{
+                      font-size:2.5em ;
+                    }
+                    
+                    }
+
+
+                        /* MEDIA Y RESPONSIVE  PELICULAX.HTML ------------------------------------------------------- */
+
+                        @media only screen and (max-width: 661px) { .mainPeliculax {
+                          padding: 1.87em 0;
+                         background-position: center;
+                         background-size: cover;
+                         
+                          
+                           display: grid;
+                           grid-template-areas: 
+                           "tituloPeliculax"
+                           "primeroPeliculax"
+                           "iconosPeliculax"
+                           "argumentoPeliculax";
+      
+                           grid-template-columns: auto;
+      
+                           grid-template-rows:auto auto auto auto}}
+                           
+                      @media only screen and (max-width: 661px) and (min-width:512px) {
+      
+                       .mainPeliculax {
+                        padding: 1.87em 0;
+                         display: grid;
+                         grid-template-areas: 
+                          "tituloPeliculax tituloPeliculax"
+                          "primeroPeliculax iconosPeliculax"
+                         "argumentoPeliculax argumentoPeliculax";
+                         grid-template-columns: auto auto;
+                          grid-template-rows:auto auto auto }}
+                     
+                     
+                      @media only screen and (max-width: 479px) { .mainPeliculax {
+                        padding: 1.87em 0;
+                         display: grid;
+                         grid-template-areas: 
+                         "tituloPeliculax"
+                         "primeroPeliculax"
+                         "iconosPeliculax"
+                         "argumentoPeliculax";
+      
+                         grid-template-columns: 100%;
+      
+                         grid-template-rows:auto auto auto auto}}
+                         
+                         
+                        
+                     
+                      @media only screen and (max-width: 294px) {.iconosPeliculax{margin: auto;}}
+      
+                 
+                 
+      
+                      @media only screen and (max-width: 661px) { .descargar {
+                          width:242px;} .tituloPeliculax {
+                            margin: auto;}.iconosPeliculax {
+                              margin: auto}.primeroPeliculax{margin: auto;}}
+                      
+      
+                      
+                     
+      
+      
+                       
+                      @media only screen and (max-width: 661px) { .trailerContenedor {
+                          flex-direction: column;width: 100%;
+                          align-items: center;} .trailerVideo {
+                            width: 80%;}.trailerImagen{width: 80%;}}
+      
+      
+                        @media only screen and (max-width: 661px) {.trailerImagen
+                          {height: 16em;}
+                        
+                        }    
+                          
+                      
+                  
+                      
+                      @media only screen and (max-width: 358px) { .trailerContenedor {
+                          margin-top: 8em;}}
+                    
+      
+      
+                       @media only screen and (max-width: 383px) and (min-width:222px) {.primeroPeliculax{margin-top: 15em;}.iconosPeliculax{margin-top:  10em;}
+                       
+                       }
+
+                       @media only screen and (max-width: 511px) and (min-width:222px) {.iconosPeliculax{margin-top:  10em;}
+                       
+                      }
+      
+                       @media only screen and (max-width:222px)  {.primeroPeliculax{margin-top:  20em;}.iconosPeliculax{margin-top:  10em;}
+                       
+                      }
+      
+      
+      
+                      @media only screen and (max-width:267px) { .imagenPeliculax {width:100%;}
+                      .descargar {width:100%;}}
+      
+      
+                   
+      
+                      @media only screen and (min-width: 1342px) {
+                          .trailerImagen img:hover{transform: scale(1.1);
+                          transition: 2s;}}
+      
+      
+                          
+                      @media only screen and (max-width: 511px) and (min-width:327px) { .imagenPeliculax{
+                        width:300px  }.descargar{width: 300px;}
+                      
+                      
+                      }
+                         
+                       
+      
+                      @media only screen and (min-width: 1342px) {.mainPeliculax{
+                          background-image:url('/images/cropped-1200-1118-1116286.jpg') ;}
+                          .pelicula2{
+                            background-image:url('/images/bkg1.jpg');background-size: cover;background-position: center;}
+                            .pelicula3{
+                              background-image:url('/images/bkg2.jpg') ;background-size: cover;background-position: center;}
+                              .pelicula4{
+                                background-image:url('/images/bkg3.jpg') ;background-size: cover;background-position: center;}
+                                .pelicula5{
+                                  background-image:url('/images/bkg4.jpg') ;background-size: cover;background-position: center;}
+                                  .pelicula6{
+                                    background-image:url('/images/bkg5.jpg') ;background-size: cover;} 
+                                    .pelicula7{
+                                      background-image:url('/images/bk6.jpg') ;}
+                                      .pelicula8{
+                                        background-image:url('/images/bkg7.jpg');background-size: cover; }
+                                        .pelicula9{
+                                          background-image:url('/images/bkg8.jpg');background-size: cover;background-position: center; }
+                                          .pelicula10{
+                                            background-image:url('/images/bkg9.jpg');background-size: cover; } 
+                                           }
+                                  
+                        
+                                           
+                       
+      
+                      @media only screen and (max-width: 1342px) {.bodyPeliculax{background-color: rgb(14, 9, 9);}}
+
+
+                      @media only screen and (max-width: 220px) { .porcentaje p{font-size:2.5em;}
+                      .calidad {display: none;}}
+
+
+                      @media only screen and (min-width: 1342px) {  .argumentoHijo{font-size: 26px;}.argumentoHijo h3{font-size: 35px;}  }
+
+
+                            
+                      @media only screen and (max-width: 725px) and (min-width: 662px) {.trailerContenedor{margin-top: 3em}
+                        
+                    }
+
+
+
+
+                       /* MEDIA Y RESPONSIVE  FOOTER de todas las paginas------------------------------------------------------ */
+                           
+
+                       @media only screen and (max-width: 329px) {.textoFooter{font-size: 0.93em;}  }
+
+                       @media only screen and (max-width: 308px) {
+                        .derechos p{color:whitesmoke; font-size: 1.4em;}  }
+
+
+                          /* MEDIA Y RESPONSIVE HTML------------------------------------------------------ */
+                      
+                     
+                          @media only screen and (max-width: 908px) {html{font-size: 70%;}}
+
+
+
+                          @media only screen and (max-width: 479px) {html{font-size: 50%;}}
+                        
+                        
+             
+                          @media only screen and (max-width: 285px) {html{font-size: 60%;} }
+                          
+                         
+               
+                          @media only screen and (max-width: 230px) {html{font-size: 50%;} }
+                          
+
+           
+                        
+        
+                    
+                          
+                   
+                      
+             
+                     
+                       
+        
+                     
+                     
+                         
+                        
+
+                       
+
+                        
+      
+      
+                            
+                     
+                      
+                       
+      
+      
+                              
+                    
+      
+      
+                      
+      
+                     
+      
+                    
+      
+                            
+                     
+                            
+                    
+      
+      
+                              
+                              
+                     
+      
+                    
+      
+              
+      
+                   
+                   
+      
+                     
+      
+                       
+                        
+                        
+                      
+                      
+      
+                  
+      
+
+
+
+
+                    
+
+            
+            
+      
+              
+
+              
+
+
+               
+            
+              
+               
+            
+               
+                
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+
+               
+            
+            
+            
+                
+
+
+
+
+               
+                
+            
+
+                 
+
+
+          
+
+             
+         
+     
+
+
+                 
+
+              
+
+
+              
+                  
+                  
+  
+   
+
+                        
+                        
+                      
+
+       
+
+          
 
 
             
