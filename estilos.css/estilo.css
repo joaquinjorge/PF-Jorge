@@ -403,7 +403,8 @@ header{width: 100%;}
                color:#FFBA08;
                background-color: rgba(168, 13, 13, 0.192) ;
                font-family: 'calibri';
-               display: block;
+               display: flex;
+               flex-direction: column;
                flex-wrap: wrap; }
              
            
