@@ -498,6 +498,7 @@ header{width: 100%;}
                 text-align: center;
                 width: auto;
                 padding-top: 60px ;
+                margin-bottom: 40px;
                 font-size: 35px;
                 text-shadow: 1px 1px 20px  rgb(206, 193, 11);}
 
@@ -871,7 +872,7 @@ header{width: 100%;}
 
                      /* MEDIA Y RESPONSIVE  TENDENCIAS.HTML ------------------------------------------------------- */
 
-                     @media only screen and (max-width: 234px)  { .h3Tendencia{
+                     @media only screen and (max-width: 249px)  { .h3Tendencia{
                       font-size:2.5em ;
                     }
                     
@@ -1064,6 +1065,10 @@ header{width: 100%;}
                          
                
                           @media only screen and (max-width: 230px) {html{font-size: 50%;} }
+
+
+
+                          
                           
 
            
