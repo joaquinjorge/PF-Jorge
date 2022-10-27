@@ -200,7 +200,7 @@ header{width: 100%;}
        
         
     
-        .carusel1{background-image: url('/images/pexels-tima-miroshnichenko-7991436.jpg')
+        .carusel1{background-image: url('images/pexels-tima-miroshnichenko-7991436.jpg')
           ;background-position: center;background-size: cover;height:  400px;}
 
           
@@ -211,15 +211,15 @@ header{width: 100%;}
           
        
        
-       .carusel2a{background-image: url('/images/699220.png');background-position: center;background-size: cover;height:400px;}
+       .carusel2a{background-image: url('images/699220.png');background-position: center;background-size: cover;height:400px;}
 
-       .carusel2b{background-image: url('/images/724130.jpg');background-size: cover;background-position: center;height:400px;}
+       .carusel2b{background-image: url('images/724130.jpg');background-size: cover;background-position: center;height:400px;}
 
-       .carusel2c{background-image: url('/images/801816.jpg');background-size: cover;background-position: center;height: 400px;}
+       .carusel2c{background-image: url('images/801816.jpg');background-size: cover;background-position: center;height: 400px;}
 
-       .carusel2d{background-image: url('/images/75842.jpg');background-position: center;background-size: cover;height:400px;}
+       .carusel2d{background-image: url('images/75842.jpg');background-position: center;background-size: cover;height:400px;}
 
-       .carusel2e{background-image: url('/images/689398.jpg');background-position: center;background-size: cover;height:400px}
+       .carusel2e{background-image: url("images/689398.jpg");background-position: center;background-size: cover;height:400px}
        
 
 
