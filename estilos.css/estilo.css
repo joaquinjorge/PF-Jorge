@@ -200,7 +200,7 @@ header{width: 100%;}
        
         
     
-        .carusel1{background-image: url('images/pexels-tima-miroshnichenko-7991436.jpg')
+        .carusel1{background-image: url('../images/pexels-tima-miroshnichenko-7991436.jpg')
           ;background-position: center;background-size: cover;height:  400px;}
 
           
@@ -211,15 +211,15 @@ header{width: 100%;}
           
        
        
-       .carusel2a{background-image: url('images/699220.png');background-position: center;background-size: cover;height:400px;}
+       .carusel2a{background-image: url('../images/699220.png');background-position: center;background-size: cover;height:400px;}
 
-       .carusel2b{background-image: url('images/724130.jpg');background-size: cover;background-position: center;height:400px;}
+       .carusel2b{background-image: url('../images/724130.jpg');background-size: cover;background-position: center;height:400px;}
 
-       .carusel2c{background-image: url('images/801816.jpg');background-size: cover;background-position: center;height: 400px;}
+       .carusel2c{background-image: url('../images/801816.jpg');background-size: cover;background-position: center;height: 400px;}
 
-       .carusel2d{background-image: url('images/75842.jpg');background-position: center;background-size: cover;height:400px;}
+       .carusel2d{background-image: url('../images/75842.jpg');background-position: center;background-size: cover;height:400px;}
 
-       .carusel2e{background-image: url("images/689398.jpg");background-position: center;background-size: cover;height:400px}
+       .carusel2e{background-image: url("../images/689398.jpg");background-position: center;background-size: cover;height:400px}
        
 
 
@@ -376,7 +376,7 @@ header{width: 100%;}
                .footerFormulario{grid-area: footerFormulario;}
 
                .mainFormulario
-               {background-image:  url('/images/Related\ Keywords\ Suggestions\ for\ movie\ theater\ background.jpg');
+               {background-image:  url('../images/Related\ Keywords\ Suggestions\ for\ movie\ theater\ background.jpg');
                 background-size: cover;
                 background-position: center;}
 
@@ -1008,31 +1008,31 @@ header{width: 100%;}
                        
       
                       @media only screen and (min-width: 1342px) {.mainPeliculax{
-                          background-image:url('/images/cropped-1200-1118-1116286.jpg') ;background-size: cover;}
+                          background-image:url('../images/cropped-1200-1118-1116286.jpg') ;background-size: cover;}
                           .pelicula2{
-                            background-image:url('/images/bkg1.jpg');background-size: cover;background-position: center;}
+                            background-image:url('../images/bkg1.jpg');background-size: cover;background-position: center;}
                             .pelicula3{
-                              background-image:url('/images/bkg2.jpg') ;background-size: cover;background-position: center;}
+                              background-image:url('../images/bkg2.jpg') ;background-size: cover;background-position: center;}
                               .pelicula4{
-                                background-image:url('/images/bkg3.jpg') ;background-size: cover;background-position: center;}
+                                background-image:url('../images/bkg3.jpg') ;background-size: cover;background-position: center;}
                                 .pelicula5{
-                                  background-image:url('/images/bkg4.jpg') ;background-size: cover;background-position: center;}
+                                  background-image:url('../images/bkg4.jpg') ;background-size: cover;background-position: center;}
                                   .pelicula6{
-                                    background-image:url('/images/bkg5.jpg') ;background-size: cover;} 
+                                    background-image:url('../images/bkg5.jpg') ;background-size: cover;} 
                                     .pelicula7{
-                                      background-image:url('/images/bk6.jpg') ;}
+                                      background-image:url('../images/bk6.jpg') ;}
                                       .pelicula8{
-                                        background-image:url('/images/bkg7.jpg');background-size: cover; }
+                                        background-image:url('../images/bkg7.jpg');background-size: cover; }
                                         .pelicula9{
-                                          background-image:url('/images/bkg8.jpg');background-size: cover;background-position: center; }
+                                          background-image:url('../images/bkg8.jpg');background-size: cover;background-position: center; }
                                           .pelicula10{
-                                            background-image:url('/images/bkg9.jpg');background-size: cover; } 
+                                            background-image:url('../images/bkg9.jpg');background-size: cover; } 
                                             
                                             .pelicula11{
-                                              background-image:url('/images/bkg10.jpg');background-size: cover; background-position: center;} 
+                                              background-image:url('../images/bkg10.jpg');background-size: cover; background-position: center;} 
                                                 
                                             .pelicula12{
-                                              background-image:url('/images/bkg11.jpg'); } 
+                                              background-image:url('../images/bkg11.jpg'); } 
                                            }
                                   
                         
