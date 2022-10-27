@@ -94,9 +94,9 @@ header{width: 100%;}
        background-color: #03071E;}
 
     .botonToggle{
-      background-color:#9D0208;
-      border-radius: 4px;
-    box-shadow:  1px 0.5px 2px 2px #03071E; }
+      background: linear-gradient(180deg, #f03232, #771111);
+      border-radius: 50px;
+    }
    
     
      
@@ -383,8 +383,8 @@ header{width: 100%;}
 
                 
               .seccionFormulario{
-                
-                height:90%;
+                margin-top: 25px;
+                height:100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -451,6 +451,15 @@ header{width: 100%;}
  
                            .boton:active{
                              transform:scale(1.2);  }
+
+                             #inputState{
+                              padding: 12px;
+                              border-radius: 4px;
+                             font-size: 15px;}
+
+                              option{font-size: 15px;}
+
+                            
                      
                        
                        
@@ -818,7 +827,7 @@ header{width: 100%;}
                 /* MEDIA Y RESPONSIVE  HEADER de todas las paginas------------------------------------------------------ */
                 @media only screen and (min-width: 992px) {.botonToggle{display: none;}}
 
-                @media only screen and (max-width: 991px) {.botonToggle{height: 25px;width: 100%;}}
+                @media only screen and (max-width: 991px) {.botonToggle{height: 40px;width: 100%;}}
 
                 @media only screen and (min-width: 1205px) {.logo{
                   animation: mover 3s alternate-reverse infinite;
