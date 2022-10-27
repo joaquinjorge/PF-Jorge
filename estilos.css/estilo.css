@@ -918,9 +918,9 @@ header{width: 100%;}
                     @media only screen and (min-width: 991px) {.col img:hover{
                          
                       transform: scale(1.05);
-                      transition: transform 1s; }
+                      transition: transform 1s; }}
                     
-                    }
+                    
 
 
                         /* MEDIA Y RESPONSIVE  PELICULAX.HTML ------------------------------------------------------- */
