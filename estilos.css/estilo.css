@@ -882,13 +882,13 @@ header{width: 100%;}
                     .carusel1,.carusel2a, .carusel2b, .carusel2c, .carusel2d, .carusel2e{height:920px;}
                      }     
                      
-                     @media only screen and (min-width: 991px) {
-       
-                    } .divImagen img:hover{
+                     @media only screen and (min-width: 991px) {.divImagen img:hover{
                       transform: scale(1.1);
                       transition: 1s;
                       }
                      
+       
+                    } 
 
 
 
