@@ -1,0 +1,22 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass sass/style.scss estilos/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaquinjorge/proyectofinal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaquinjorge/proyectofinal/issues"
+  },
+  "homepage": "https://github.com/joaquinjorge/proyectofinal#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
