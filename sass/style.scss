@@ -433,16 +433,16 @@ html {
 
          .headerPeliculax{grid-area: headerPeliculax;}
 
-         .mainPeliculax {grid-area: mainPeliculax;}
+         .mainPeliculax {grid-area: mainPeliculax; @include contenedor();}
 
          .footerPeliculax{grid-area: footerPeliculax;}
 
          
-         .caruselPelicula{margin-top: 96px;}
+         .caruselPelicula{ margin-top: 96px;}
         
 
          .mainPeliculax {
-            @include contenedor();
+           
 
          
            padding: 30px 0;
