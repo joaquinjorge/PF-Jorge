@@ -87,7 +87,7 @@ header {
 
 .botonToggle {
   background: linear-gradient(180deg, #f03232, #771111);
-  border-radius: 50px;
+  border-radius: 0px;
 }
 
 /* hero carusel imagenes------------------------------------------------------------------------------- */
@@ -402,21 +402,6 @@ option {
 
 .mainTendencia {
   background-color: black;
-}
-
-.heroTendencia {
-  height: 400px;
-  width: 100%;
-}
-
-.videoTendencia {
-  height: 100%;
-  width: 100%;
-}
-
-.videoTendencia source {
-  height: 100%;
-  width: 100%;
 }
 
 .tendenciasFondo {
