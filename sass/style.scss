@@ -202,7 +202,21 @@ html {
         @include flex-column()
           }
 
-        .section2Hijo h3{margin-top: 10px;}
+        
+
+        
+        .divImagen-1{
+          height: 350px;
+          width: 100%;
+          border-right: 5px solid #cf084e;
+          border-top: 5px solid #e60808;
+          
+          border-radius: 4px;}
+
+          .divImagen-1 img{
+            height: 100%;
+            width: 100%; }
+         
 
        
 
@@ -212,8 +226,9 @@ html {
           border: 5px solid #370617;
           border-radius: 4px;}
 
+
           .divImagena{
-           border: 5px solid #280438;}
+           border: 5px solid #682186;}
 
         .divImagen img{
          height: 100%;
@@ -388,11 +403,16 @@ html {
         margin-bottom: 40px;
         font-size: 35px;
         text-shadow: 1px 1px 20px  rgb(206, 193, 11);
-         animation-duration:2s;}
+        }
 
         .mainTendencia{background-color: black;}
 
-        .videoTendencia{max-width:100%;height: auto;}
+      
+       
+
+        .videoT a{text-decoration: none;color: #f1ecea;background-color:rgba(94, 87, 87, 0.6);border-radius: 20px;width: 300px;height: 200px;}
+
+        .videoTendencia{width:100%;height: 400px;}
         
        
         
@@ -680,7 +700,7 @@ html {
 
                 .logo{display: none;}.navBoton{font-size: 15px;}.form-control::placeholder{font-size: 15px;}
               
-                .headerBusqueda{width: 82%;}}
+                }
 
 
 
@@ -784,6 +804,7 @@ html {
                             transform: scale(1.05);
                             transition: transform 1s; }}
 
+                            
 
 
                             
