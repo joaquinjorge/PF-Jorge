@@ -391,6 +391,9 @@ html {
          animation-duration:2s;}
 
         .mainTendencia{background-color: black;}
+
+        .videoTendencia{max-width:100%;height: auto;}
+        
        
         
        
@@ -662,7 +665,7 @@ html {
 
                 @media only screen and (min-width: 992px) {.botonToggle{display: none;}}
 
-                @media only screen and (max-width: 991px) {.botonToggle{height: 40px;width: 100%;}}
+                @media only screen and (max-width: 991px) {.botonToggle{height: 40px;width: 40%;}}
 
                 @media only screen and (min-width: 1205px) {.logo{
                   animation: mover 3s alternate-reverse infinite;
@@ -671,15 +674,17 @@ html {
                 @media only screen and (min-width: 1024px) {@keyframes mover {from{transform: translateX(0);}
                 to{transform: translateX(200px)  ;} } }
 
-                @media only screen and (max-width: 991px) {.listaEnlaces li a{background: linear-gradient(90deg, #000000, #232222);justify-content: center;width: 100%;display: flex;}
+                @media only screen and (max-width: 991px) {.listaEnlaces li a{background: linear-gradient(90deg, #000000, #232222);justify-content: center;width: 90%;display: flex;}
 
 
 
-                .logo{display: none;}.navBoton{font-size: 15px;}.form-control::placeholder{font-size: 15px;}}
+                .logo{display: none;}.navBoton{font-size: 15px;}.form-control::placeholder{font-size: 15px;}
+              
+                .headerBusqueda{width: 82%;}}
 
 
 
-                @media only screen and (max-width: 908px) {.listaEnlaces li a{font-size: 20px;}.listaEnlaces li {width: auto;}}
+                @media only screen and (max-width: 908px) {.listaEnlaces li a{font-size: 20px;}.listaEnlaces li {width: 90%;}}
 
 
                   /* MEDIA Y RESPONSIVE  INDEX.HTML ------------------------------------------------------- */

@@ -404,6 +404,11 @@ option {
   background-color: black;
 }
 
+.videoTendencia {
+  max-width: 100%;
+  height: auto;
+}
+
 .tendenciasFondo {
   background: linear-gradient(90deg, #000000, #141212);
 }
@@ -714,7 +719,7 @@ option {
 @media only screen and (max-width: 991px) {
   .botonToggle {
     height: 40px;
-    width: 100%;
+    width: 40%;
   }
 }
 @media only screen and (min-width: 1205px) {
@@ -737,7 +742,7 @@ option {
   .listaEnlaces li a {
     background: linear-gradient(90deg, #000000, #232222);
     justify-content: center;
-    width: 100%;
+    width: 90%;
     display: flex;
   }
   .logo {
@@ -749,13 +754,16 @@ option {
   .form-control::placeholder {
     font-size: 15px;
   }
+  .headerBusqueda {
+    width: 82%;
+  }
 }
 @media only screen and (max-width: 908px) {
   .listaEnlaces li a {
     font-size: 20px;
   }
   .listaEnlaces li {
-    width: auto;
+    width: 90%;
   }
 }
 /* MEDIA Y RESPONSIVE  INDEX.HTML ------------------------------------------------------- */
