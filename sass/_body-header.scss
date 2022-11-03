@@ -1,0 +1,86 @@
+
+@import "variables";
+body {
+ @include grid(1,100%,3,auto); 
+  grid-template-areas: "header" "main" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+
+
+/* 
+
+
+
+
+
+nav----------------------------------------------------------------------------------- */
+
+header {
+    width: 100%;
+  }
+  
+  .navegacion {
+    background:$fondoNav;
+    height: auto;
+  }
+  
+  .listaEnlaces {
+    width: 100%;
+    justify-content: flex-end;
+  
+    li a {
+      color: #FFBA08;
+      border: 2px solid #40424b;
+      font-size: 1.5em;
+      margin-right: 20px;
+  
+      &:hover {
+        color: #aaa69a;
+      }
+    }
+  }
+  
+  .logo {
+  @include flex-center;
+    height: 100%;
+    margin-left: 10px;
+  }
+  
+  .imagen {
+    height: 80px;
+  
+    img {
+      height: auto;
+    }
+  }
+  
+  .h1 {
+    font-size: 45px;
+    box-shadow: 0 10px 10px yellow;
+    color: #FFBA08;
+  }
+  
+  .navBoton {
+    border-radius: 6px;
+    border: 2px solid #03071E;
+    color: #FFBA08;
+    background-color: #03071E;
+  }
+  
+  .botonToggle {
+    background: linear-gradient(180deg, #f03232, #771111);
+    border-radius: 0px;
+  }
+  

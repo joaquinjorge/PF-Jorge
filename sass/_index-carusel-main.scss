@@ -1,0 +1,159 @@
+
+
+@import "variables";
+/* hero carusel imagenes------------------------------------------------------------------------------- */
+
+.caruselTamaño {
+    height: 400px;
+    position: relative;
+  }
+  
+  .carusel1, .carusel2a, .carusel2b, .carusel2c, .carusel2d, .carusel2e {
+    height: 400px;
+  }
+  
+  .caruselTamaño img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .section1 {
+   @include contenedor;
+    height: auto;
+    color: #F48C06;
+    text-align: center;
+   @include position;
+    border-bottom: 0.5px solid gray;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+  
+  .heroTexto {
+    @include flex-center;
+    flex-direction: column;
+    height: 100%;
+  
+    h2 {
+      font-size: 3.4rem;
+      font-weight: 600;
+      text-shadow: 1px 2px black;
+    }
+  }
+  
+  .textoIntroduccion {
+    font-size: 1.87rem;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+  }
+  
+  .descargaPopular {
+   @include flex-center;
+    gap: 5px;
+    width: 100%;
+  
+    i {
+      color: yellow;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+  
+    p {
+      font-size: 25px;
+      font-weight: 600;
+      color: #FFBA08;
+    }
+  }
+  
+  /* main-----------------------------------------------------------------------------------*/
+  
+  .principal {
+    width: 100%;
+    min-height: 500px;
+    background-color: rgb(14, 9, 9);
+  }
+  
+  .principalh3 {
+    padding-top: 20px;
+    margin: auto;
+    max-width: 1000px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #FFBA08;
+  }
+  
+  .section2 {
+    height: 100%;
+    gap: 20px;
+    width: 100%;
+  @include contenedor;
+  }
+  
+  .section2Hijo {
+    height: 400px;
+    width: 230px;
+    @include flex-column;
+  }
+  
+  .divImagen-1 {
+    height: 350px;
+    width: 100%;
+    border-right: 5px solid #cf084e;
+    border-top: 5px solid #e60808;
+    border-radius: 4px;
+  
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  .divImagen {
+    height: 350px;
+    width: 100%;
+    border: 5px solid #370617;
+    border-radius: 4px;
+  }
+  
+  .divImagena {
+    border: 5px solid #682186;
+  }
+  
+  .divImagen {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  
+    &:hover {
+      opacity: 0.8;
+      border: 5px solid white;
+    }
+  }
+  
+  .section2Hijo {
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+  
+      &:hover {
+        color: grey;
+      }
+    }
+  
+    p {
+      color: rgb(153, 147, 147);
+      font-size: 20px;
+    }
+  }
+  
+  .section3 {
+    @include contenedor;
+    padding: 30px 0;
+  }
+  
+  .segundo {
+    background: linear-gradient(0deg, #370617, #080000);
+  }

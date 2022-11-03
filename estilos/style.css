@@ -6,31 +6,44 @@
   font-family: "calibri";
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "calibri";
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 100%;
 }
 
-.cuerpo {
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
+body {
   display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: repeat(3, auto);
   grid-template-areas: "header" "main" "footer";
 }
 
-.headerIndex {
+header {
   grid-area: header;
 }
 
-.mainIndex {
+main {
   grid-area: main;
 }
 
-.footerIndex {
+footer {
   grid-area: footer;
 }
 
-/* nav----------------------------------------------------------------------------------- */
+/* 
+
+
+
+
+
+nav----------------------------------------------------------------------------------- */
 header {
   width: 100%;
 }
@@ -44,14 +57,12 @@ header {
   width: 100%;
   justify-content: flex-end;
 }
-
 .listaEnlaces li a {
   color: #FFBA08;
   border: 2px solid #40424b;
   font-size: 1.5em;
   margin-right: 20px;
 }
-
 .listaEnlaces li a:hover {
   color: #aaa69a;
 }
@@ -67,7 +78,6 @@ header {
 .imagen {
   height: 80px;
 }
-
 .imagen img {
   height: auto;
 }
@@ -133,7 +143,6 @@ header {
   flex-direction: column;
   height: 100%;
 }
-
 .heroTexto h2 {
   font-size: 3.4rem;
   font-weight: 600;
@@ -154,13 +163,11 @@ header {
   gap: 5px;
   width: 100%;
 }
-
 .descargaPopular i {
   color: yellow;
   font-weight: 600;
   margin-bottom: 16px;
 }
-
 .descargaPopular p {
   font-size: 25px;
   font-weight: 600;
@@ -208,7 +215,6 @@ header {
   border-top: 5px solid #e60808;
   border-radius: 4px;
 }
-
 .divImagen-1 img {
   height: 100%;
   width: 100%;
@@ -229,7 +235,6 @@ header {
   height: 100%;
   width: 100%;
 }
-
 .divImagen:hover {
   opacity: 0.8;
   border: 5px solid white;
@@ -240,11 +245,9 @@ header {
   color: white;
   font-size: 20px;
 }
-
 .section2Hijo a:hover {
   color: grey;
 }
-
 .section2Hijo p {
   color: rgb(153, 147, 147);
   font-size: 20px;
@@ -314,15 +317,10 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
 }
-
 .forma h4 {
   margin-bottom: 22px;
   font-size: 25px;
   text-align: center;
-}
-
-.inputFormulario::placeholder {
-  color: white;
 }
 
 .inputFormulario {
@@ -333,7 +331,9 @@ header {
   font-size: 15px;
   background-color: rgba(255, 255, 255, 0.15);
 }
-
+.inputFormulario::placeholder {
+  color: white;
+}
 .inputFormulario:focus {
   height: 50px;
   font-size: 22px;
@@ -353,13 +353,11 @@ header {
   border: 0px;
   color: white;
 }
-
 .boton:hover {
   cursor: pointer;
   transform: translateY(-10px);
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
-
 .boton:active {
   transform: scale(1.2);
 }
@@ -379,25 +377,6 @@ option {
 }
 
 /* ---------------------PAGINA TENDENCIAS --------*/
-.bodyTendencia {
-  display: grid;
-  grid-template-areas: "headerTendencia" "mainTendencia" "footerTendencia";
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
-}
-
-.headerTendencia {
-  grid-area: headerTendencia;
-}
-
-.mainTendencia {
-  grid-area: mainTendencia;
-}
-
-.footerTendencia {
-  grid-area: footerTendencia;
-}
-
 .h3Tendencia {
   color: #FFBA08;
   text-align: center;
@@ -435,16 +414,11 @@ option {
   color: white;
   font-size: 24px;
 }
-
 .col a:hover {
   color: grey;
 }
-
 .col p {
   color: rgb(153, 147, 147);
-}
-
-.col p {
   font-size: 16px;
 }
 
@@ -452,27 +426,14 @@ option {
 .bodyPeliculax {
   background-color: rgb(20, 3, 10);
   color: white;
-  display: grid;
-  grid-template-areas: "headerPeliculax" "mainPeliculax" "footerPeliculax";
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
-}
-
-.headerPeliculax {
-  grid-area: headerPeliculax;
 }
 
 .mainPeliculax {
-  grid-area: mainPeliculax;
   margin: auto;
   max-width: 1200px;
   padding: 60px 0;
   overflow: hidden;
   width: 90%;
-}
-
-.footerPeliculax {
-  grid-area: footerPeliculax;
 }
 
 .caruselPelicula {
@@ -509,7 +470,6 @@ option {
   border: 7px solid #370617;
   border-radius: 4px;
 }
-
 .imagenPeliculax img {
   height: 100%;
   width: 100%;
@@ -526,7 +486,6 @@ option {
   flex-direction: column;
   text-align: center;
 }
-
 .descargar a {
   text-decoration: none;
   color: white;
@@ -543,12 +502,10 @@ option {
   margin-left: 80px;
   height: 200px;
 }
-
 .tituloPeliculax h2 {
   font-size: 40px;
   margin-bottom: 10px;
 }
-
 .tituloPeliculax h3 {
   font-size: 22px;
   font-weight: bold;
@@ -559,7 +516,6 @@ option {
   margin-bottom: 200px;
   height: 300px;
 }
-
 .iconosPeliculax p {
   font-size: 20px;
   font-weight: 700;
@@ -596,7 +552,6 @@ option {
   display: flex;
   gap: 40px;
 }
-
 .porcentaje i {
   font-size: 30px;
   color: #FFBA08;
@@ -625,7 +580,6 @@ option {
   height: 200px;
   margin: 1rem;
 }
-
 .trailerVideo iframe {
   width: 100%;
   height: 100%;
@@ -638,7 +592,6 @@ option {
   height: 200px;
   margin: 1rem;
 }
-
 .trailerImagen img {
   width: 100%;
   height: 100%;
@@ -660,11 +613,9 @@ option {
   margin-top: 50px;
   width: 100%;
 }
-
 .argumentoTexto h3 {
   font-size: 25px;
 }
-
 .argumentoTexto p {
   margin-top: 20px;
   font-size: 20px;
@@ -709,7 +660,6 @@ option {
   text-decoration: none;
   color: white;
 }
-
 .iconos a :hover {
   transform: scale(1.3);
   color: rgb(110, 13, 13);
@@ -719,11 +669,7 @@ option {
   background-color: #370617;
 }
 
-.footerTendencia {
-  background: linear-gradient(0deg, #370617, #080000);
-}
-
-.footerFormulario {
+.footerTendencia, .footerFormulario {
   background: linear-gradient(0deg, #370617, #080000);
 }
 
@@ -765,19 +711,16 @@ option {
   .logo {
     display: none;
   }
-  .navBoton {
-    font-size: 15px;
-  }
-  .form-control::placeholder {
+  .navBoton, .form-control::placeholder {
     font-size: 15px;
   }
 }
 @media only screen and (max-width: 908px) {
-  .listaEnlaces li a {
-    font-size: 20px;
-  }
   .listaEnlaces li {
     width: 90%;
+  }
+  .listaEnlaces li a {
+    font-size: 20px;
   }
 }
 /* MEDIA Y RESPONSIVE  INDEX.HTML ------------------------------------------------------- */
@@ -825,11 +768,8 @@ option {
   }
 }
 @media only screen and (min-width: 909px) {
-  .caruselTamaño {
-    height: 920px;
-  }
-  .carusel1, .carusel2a, .carusel2b, .carusel2c, .carusel2d, .carusel2e {
-    height: 920px;
+  .caruselTamaño, .carusel1, .carusel2a, .carusel2b, .carusel2c, .carusel2d, .carusel2e {
+    height: 930px;
   }
 }
 @media only screen and (min-width: 991px) {
@@ -906,27 +846,27 @@ option {
     background-position: center;
     background-size: cover;
     display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: "tituloPeliculax" "primeroPeliculax" "iconosPeliculax" "argumentoPeliculax";
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
   }
 }
 @media only screen and (max-width: 661px) and (min-width: 512px) {
   .mainPeliculax {
     padding: 1.87em 0;
     display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: "tituloPeliculax tituloPeliculax" "primeroPeliculax iconosPeliculax" "argumentoPeliculax argumentoPeliculax";
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
   }
 }
 @media only screen and (max-width: 479px) {
   .mainPeliculax {
     padding: 1.87em 0;
     display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: "tituloPeliculax" "primeroPeliculax" "iconosPeliculax" "argumentoPeliculax";
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto;
   }
 }
 @media only screen and (max-width: 294px) {
@@ -942,10 +882,7 @@ option {
     margin: auto;
     text-align: center;
   }
-  .iconosPeliculax {
-    margin: auto;
-  }
-  .primeroPeliculax {
+  .iconosPeliculax, .primeroPeliculax {
     margin: auto;
   }
 }
@@ -955,11 +892,7 @@ option {
     width: 100%;
     align-items: center;
   }
-  .trailerVideo {
-    width: 80%;
-    margin: 2rem;
-  }
-  .trailerImagen {
+  .trailerVideo, .trailerImagen {
     width: 80%;
     margin: 2rem;
   }
@@ -996,10 +929,7 @@ option {
   }
 }
 @media only screen and (max-width: 267px) {
-  .imagenPeliculax {
-    width: 100%;
-  }
-  .descargar {
+  .imagenPeliculax, .descargar {
     width: 100%;
   }
 }
@@ -1010,10 +940,7 @@ option {
   }
 }
 @media only screen and (max-width: 511px) and (min-width: 327px) {
-  .imagenPeliculax {
-    width: 300px;
-  }
-  .descargar {
+  .imagenPeliculax, .descargar {
     width: 300px;
   }
 }

@@ -1,0 +1,116 @@
+
+@import "variables";
+
+
+/* -----------PAGINA FORMULARIO DE LOGIN/REGISTER------------- */
+
+.bodyFormulario {
+    min-height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 100% auto;
+    display: grid;
+    grid-template-areas: "headerFormulario" "mainFormulario " "footerFormulario ";
+  }
+  
+  .headerFormulario {
+    grid-area: headerFormulario;
+  }
+  
+  .mainFormulario {
+    grid-area: mainFormulario;
+  }
+  
+  .footerFormulario {
+    grid-area: footerFormulario;
+  }
+  
+  .mainFormulario {
+    background-image: url("../images/Related Keywords Suggestions for movie theater background.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .seccionFormulario {
+    margin-top: 25px;
+    height: 100%;
+    @include flex-center;
+  }
+  
+  .videoFormulario {
+    display: none;
+  }
+  
+  .forma {
+    width: 400px;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 20px 12px rgb(133, 3, 3);
+    color: #FFBA08;
+    background-color: rgba(168, 13, 13, 0.192);
+    font-family: "calibri";
+    @include flex-column;
+    flex-wrap: wrap;
+  
+    h4 {
+      margin-bottom: 22px;
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+  
+  .inputFormulario {
+    &::placeholder {
+      color: white;
+    }
+  
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+  
+    &:focus {
+      height: 50px;
+      font-size: 22px;
+    }
+  }
+  
+  .forma p {
+    text-align: center;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+  .boton {
+    background: linear-gradient(black, #991616);
+    margin-top: 15px;
+    font-size: 18px;
+    border: 0px;
+    color: white;
+  
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-10px);
+      transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+    }
+  
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+  
+  #inputState {
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  
+  option {
+    font-size: 15px;
+  }
+  
+  .animate__animated.animate__zoomIn {
+    --animate-duration:3s;
+  }
