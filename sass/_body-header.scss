@@ -41,7 +41,7 @@ header {
     justify-content: flex-end;
   
     li a {
-      color: #FFBA08;
+      color: $titulo;
       border: 2px solid #40424b;
       font-size: 1.5em;
       margin-right: 20px;
@@ -69,13 +69,13 @@ header {
   .h1 {
     font-size: 45px;
     box-shadow: 0 10px 10px yellow;
-    color: #FFBA08;
+    color: $titulo;
   }
   
   .navBoton {
     border-radius: 6px;
     border: 2px solid #03071E;
-    color: #FFBA08;
+    color:$titulo;
     background-color: #03071E;
   }
   
@@ -83,4 +83,8 @@ header {
     background: linear-gradient(180deg, #f03232, #771111);
     border-radius: 0px;
   }
+  
+
+
+
   

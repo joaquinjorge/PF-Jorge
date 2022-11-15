@@ -37,7 +37,7 @@
   }
   
   .videoFormulario {
-    display: none;
+    display: $anclas;
   }
   
   .forma {
@@ -45,15 +45,15 @@
     padding: 30px;
     border-radius: 4px;
     box-shadow: 1px 1px 20px 12px rgb(133, 3, 3);
-    color: #FFBA08;
+    color: $titulo;
     background-color: rgba(168, 13, 13, 0.192);
     font-family: "calibri";
     @include flex-column;
     flex-wrap: wrap;
   
-    h4 {
+    h2 {
       margin-bottom: 22px;
-      font-size: 25px;
+      font-size: 30px;
       text-align: center;
     }
   }
@@ -114,3 +114,5 @@
   .animate__animated.animate__zoomIn {
     --animate-duration:3s;
   }
+
+

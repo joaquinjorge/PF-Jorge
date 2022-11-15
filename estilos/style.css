@@ -219,6 +219,10 @@ header {
   height: 100%;
   width: 100%;
 }
+.divImagen-1:hover {
+  opacity: 0.8;
+  border: 5px solid white;
+}
 
 .divImagen {
   height: 350px;
@@ -317,9 +321,9 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.forma h4 {
+.forma h2 {
   margin-bottom: 22px;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -377,27 +381,17 @@ option {
 }
 
 /* ---------------------PAGINA TENDENCIAS --------*/
-.h3Tendencia {
+.h2Tendencia {
   color: #FFBA08;
   text-align: center;
   width: auto;
-  padding-top: 60px;
-  margin-bottom: 40px;
+  padding-top: 10px;
   font-size: 35px;
   text-shadow: 1px 1px 20px rgb(206, 193, 11);
 }
 
 .mainTendencia {
   background-color: black;
-}
-
-.videoT a {
-  text-decoration: none;
-  color: #f1ecea;
-  background-color: rgba(94, 87, 87, 0.6);
-  border-radius: 20px;
-  width: 300px;
-  height: 200px;
 }
 
 .videoTendencia {
@@ -424,8 +418,8 @@ option {
 
 /* ---------------------PAGINA Peliculax --------*/
 .bodyPeliculax {
-  background-color: rgb(20, 3, 10);
-  color: white;
+  background-image: url("../images/umberto-FewHpO4VC9Y-unsplash.jpg");
+  color: whitesmoke;
 }
 
 .mainPeliculax {
@@ -521,7 +515,7 @@ option {
   font-weight: 700;
 }
 
-.bluray2 {
+.bluray1, .bluray2 {
   background-color: green;
   text-decoration: none;
   font-size: 18px;
@@ -529,19 +523,11 @@ option {
   border-radius: 4px;
   width: 200px;
   height: 300px;
-  margin-left: 10px;
   color: white;
 }
 
-.bluray1 {
-  background-color: green;
-  text-decoration: none;
-  font-size: 18px;
-  border: 1px solid white;
-  border-radius: 4px;
-  width: 200px;
-  height: 300px;
-  color: white;
+.bluray2 {
+  margin-left: 10px;
 }
 
 .calidad {
@@ -550,7 +536,7 @@ option {
 
 .porcentaje {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 .porcentaje i {
   font-size: 30px;
@@ -600,21 +586,24 @@ option {
 }
 
 .argumentoHijo {
+  background-color: rgba(1, 1, 1, 0.5);
   display: flex;
-  flex-direction: column;
+  margin: auto;
   height: auto;
-  flex-wrap: wrap;
   text-align: center;
   gap: 50px;
   font-size: 20px;
 }
+.argumentoHijo h3::after {
+  content: ":";
+}
 
 .argumentoTexto {
-  margin-top: 50px;
-  width: 100%;
+  width: 60%;
 }
 .argumentoTexto h3 {
   font-size: 25px;
+  text-decoration: underline;
 }
 .argumentoTexto p {
   margin-top: 20px;
@@ -624,10 +613,12 @@ option {
 .argumentoHijob h3 {
   margin-top: 20px;
   font-size: 25px;
+  text-decoration: underline;
 }
 
 .argumentoHijoa h3 {
   font-size: 25px;
+  text-decoration: underline;
 }
 
 /* FOOTER--------------------- ----------------------------------------------------*/
@@ -658,11 +649,34 @@ option {
 
 .iconos a {
   text-decoration: none;
-  color: white;
 }
 .iconos a :hover {
   transform: scale(1.3);
-  color: rgb(110, 13, 13);
+  transition: 1s;
+}
+
+.facebook {
+  color: #1877f2;
+}
+
+.twitter {
+  color: #1DA1F2;
+}
+
+.youtube {
+  color: #FF0000;
+}
+
+.facebook:hover {
+  color: #1877f2;
+}
+
+.twitter:hover {
+  color: #1DA1F2;
+}
+
+.youtube:hover {
+  color: #FF0000;
 }
 
 .footerPeliculax {
@@ -747,6 +761,11 @@ option {
     font-size: 1.5em;
   }
 }
+@media only screen and (max-width: 309px) {
+  .heroTexto h2 {
+    font-size: 3rem;
+  }
+}
 @media screen and (max-width: 285px) {
   .section1 h2 {
     display: none;
@@ -777,6 +796,22 @@ option {
     transform: scale(1.1);
     transition: 1s;
   }
+  .divImagen-1 img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+}
+/* MEDIA Y RESPONSIVE  TENDENCIAS.HTML ------------------------------------------------------- */
+@media only screen and (max-width: 249px) {
+  .h3Tendencia {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .col img:hover {
+    transform: scale(1.05);
+    transition: transform 1s;
+  }
 }
 /* MEDIA Y RESPONSIVE  FORMULARIO.HTML ------------------------------------------------------- */
 @media screen and (max-width: 619px) {
@@ -802,8 +837,8 @@ option {
     right: 0;
     left: 0;
     bottom: 0;
-    animation: moviendo 2.3s ease-in;
-    transition: 2.3s;
+    animation: moviendo 2.8s ease-in;
+    transition: 2.8s;
     height: 650px;
   }
   @keyframes moviendo {
@@ -825,18 +860,6 @@ option {
   }
   .animate__animated.animate__zoomIn {
     --animate-duration:6s;
-  }
-}
-/* MEDIA Y RESPONSIVE  TENDENCIAS.HTML ------------------------------------------------------- */
-@media only screen and (max-width: 249px) {
-  .h3Tendencia {
-    font-size: 2.5em;
-  }
-}
-@media only screen and (min-width: 991px) {
-  .col img:hover {
-    transform: scale(1.05);
-    transition: transform 1s;
   }
 }
 /* MEDIA Y RESPONSIVE  PELICULAX.HTML ------------------------------------------------------- */
@@ -945,57 +968,140 @@ option {
   }
 }
 @media only screen and (min-width: 991px) {
-  .mainPeliculax {
-    background-image: url("../images/cropped-1200-1118-1116286.jpg");
-    background-size: cover;
-  }
-  .pelicula2 {
+  .pelicula1 {
     background-image: url("../images/bkg1.jpg");
     background-size: cover;
     background-position: center;
   }
-  .pelicula3 {
+  .pelicula2 {
     background-image: url("../images/bkg2.jpg");
     background-size: cover;
     background-position: center;
   }
-  .pelicula4 {
+  .pelicula3 {
     background-image: url("../images/bkg3.jpg");
     background-size: cover;
     background-position: center;
   }
-  .pelicula5 {
+  .pelicula4 {
     background-image: url("../images/bkg4.jpg");
     background-size: cover;
     background-position: center;
   }
-  .pelicula6 {
+  .pelicula5 {
     background-image: url("../images/bkg5.jpg");
     background-size: cover;
+    background-position: center;
+  }
+  .pelicula6 {
+    background-image: url("../images/bkg6.jpg");
+    background-size: cover;
+    background-position: center;
   }
   .pelicula7 {
-    background-image: url("../images/bk6.jpg");
-  }
-  .pelicula8 {
     background-image: url("../images/bkg7.jpg");
     background-size: cover;
+    background-position: center;
   }
-  .pelicula9 {
+  .pelicula8 {
     background-image: url("../images/bkg8.jpg");
     background-size: cover;
     background-position: center;
   }
-  .pelicula10 {
+  .pelicula9 {
     background-image: url("../images/bkg9.jpg");
     background-size: cover;
+    background-position: center;
   }
-  .pelicula11 {
+  .pelicula10 {
     background-image: url("../images/bkg10.jpg");
     background-size: cover;
     background-position: center;
   }
-  .pelicula12 {
+  .pelicula11 {
     background-image: url("../images/bkg11.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula12 {
+    background-image: url("../images/bkg12.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula13 {
+    background-image: url("../images/bkg13.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula14 {
+    background-image: url("../images/bkg14.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula15 {
+    background-image: url("../images/bkg15.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula16 {
+    background-image: url("../images/bkg16.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula17 {
+    background-image: url("../images/bkg17.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula18 {
+    background-image: url("../images/bkg18.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula19 {
+    background-image: url("../images/bkg19.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula20 {
+    background-image: url("../images/bkg20.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula21 {
+    background-image: url("../images/bkg21.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula22 {
+    background-image: url("../images/bkg22.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula23 {
+    background-image: url("../images/bkg23.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula24 {
+    background-image: url("../images/bkg24.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula25 {
+    background-image: url("../images/bkg25.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula26 {
+    background-image: url("../images/bkg26.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .pelicula27 {
+    background-image: url("../images/bkg27.jpg");
+    background-size: cover;
+    background-position: center;
   }
 }
 @media only screen and (max-width: 1342px) {
@@ -1011,12 +1117,21 @@ option {
     display: none;
   }
 }
+@media only screen and (max-width: 722px) {
+  .argumentoHijo {
+    flex-direction: column;
+    width: 100%;
+  }
+  .argumentoTexto {
+    width: 100%;
+  }
+}
 @media only screen and (min-width: 1342px) {
   .argumentoHijo {
-    font-size: 26px;
+    font-size: 20px;
   }
   .argumentoHijo h3 {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 @media only screen and (max-width: 725px) and (min-width: 662px) {
@@ -1045,11 +1160,6 @@ option {
 @media only screen and (max-width: 479px) {
   html {
     font-size: 50%;
-  }
-}
-@media only screen and (max-width: 309px) {
-  .heroTexto h2 {
-    font-size: 3rem;
   }
 }
 @media only screen and (max-width: 285px) {
