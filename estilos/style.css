@@ -993,6 +993,9 @@ option {
     margin: auto;
     margin-top: 30px;
   }
+  .flexTendencia figcaption i {
+    padding-top: 100px;
+  }
 }
 /* MEDIA Y RESPONSIVE  FORMULARIO.HTML ------------------------------------------------------- */
 @media screen and (max-width: 619px) {
