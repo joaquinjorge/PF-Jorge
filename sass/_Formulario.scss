@@ -59,9 +59,8 @@
   }
   
   .inputFormulario {
-    &::placeholder {
-      color: white;
-    }
+    &:hover{border-bottom:2px solid #f50505;border-top:2px solid rgb(3, 47, 97);}
+    &::placeholder{color: #fff;}
   
     width: 100%;
     padding: 8px;
@@ -69,11 +68,17 @@
     border: 1px solid black;
     font-size: 15px;
     background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
   
     &:focus {
       height: 50px;
       font-size: 22px;
+      background-color: rgba(255, 255, 255, 0.15);
+      color: white;
+      transition: 1.5s;
+
     }
+   
   }
   
   .forma p {
@@ -82,23 +87,80 @@
     height: 40px;
     line-height: 40px;
   }
+  #inputState{  background-color: rgba(255, 255, 255, 0.15);color:white;
+   option{background-color:rgb(75, 5, 20);color: #fff;}}
+  .botonFormulario {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    position: relative;
+    font-size: 17px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+  }
   
-  .boton {
-    background: linear-gradient(black, #991616);
-    margin-top: 15px;
-    font-size: 18px;
-    border: 0px;
-    color: white;
+  .botonFormulario:hover {
+    letter-spacing: 0.25em;
+    background: #f30606;
+    color: #050000;
+    box-shadow: 0 0 45px #f50505;
+  }
   
-    &:hover {
-      cursor: pointer;
-      transform: translateY(-10px);
-      transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-    }
+  .botonFormulario::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
   
-    &:active {
-      transform: scale(1.2);
-    }
+  .botonFormulario span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .botonFormulario i {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  
+  .botonFormulario i::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #fffb05;
+    width: 7px;
+    height: 4px;
+    top: -3.5px;
+    left: 80%;
+    background: #222222;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+  
+  .botonFormulario:hover i::before {
+    width: 20px;
+    left: 20%;
+  }
+  
+  .botonFormulario i::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #fffb05;
+    width: 7px;
+    height: 4px;
+    bottom: -3.5px;
+    left: 20%;
+    background: #222222;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+  
+  .botonFormulario:hover i::after {
+    width: 20px;
+    left: 80%;
   }
   
   #inputState {

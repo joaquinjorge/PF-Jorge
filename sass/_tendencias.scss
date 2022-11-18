@@ -5,19 +5,51 @@
 /* ---------------------PAGINA TENDENCIAS --------*/
 
 
-.h2Tendencia {
-    color:$titulo;
-    text-align: center;
-    width: auto;
-    padding-top: 10px;
-    font-size: 35px;
-    text-shadow: 1px 1px 20px rgb(206, 193, 11);
-  }
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  --border-right:6px;
+  --text-stroke-color:rgba(247, 118, 14, 0.6);
+  --animation-color:#f0d01b;
+  --fs-size:2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button .hover-text {
+  animation: trending 2s linear forwards;
+}
+
   
   .mainTendencia {
     background-color: black;
   }
+
+  .flexTendencia{gap: 20px;padding: 80px 0;border-radius: 15px;}
   
+
  
   
   .videoTendencia {
@@ -26,8 +58,12 @@
   }
   
   .tendenciasFondo {
-    background: linear-gradient(90deg, #000000, #141212);
+    background: linear-gradient(90deg, #000000, #141212);position: relative;
   }
+
+ 
+
+ 
   
   .col {
     a {
@@ -41,8 +77,8 @@
     }
   
     p {
-      color: rgb(153, 147, 147);
-      font-size: 16px;
+      color: white;
+      font-size: 20px;
     }
   }
 

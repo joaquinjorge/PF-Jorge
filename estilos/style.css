@@ -149,6 +149,11 @@ header {
   text-shadow: 1px 2px black;
 }
 
+strong {
+  color: #dcff14;
+  font-weight: 700;
+}
+
 .textoIntroduccion {
   font-size: 1.87rem;
   width: 80%;
@@ -219,10 +224,6 @@ header {
   height: 100%;
   width: 100%;
 }
-.divImagen-1:hover {
-  opacity: 0.8;
-  border: 5px solid white;
-}
 
 .divImagen {
   height: 350px;
@@ -239,22 +240,21 @@ header {
   height: 100%;
   width: 100%;
 }
-.divImagen:hover {
-  opacity: 0.8;
-  border: 5px solid white;
-}
 
+.section2Hijo {
+  margin-top: 10px;
+}
 .section2Hijo a {
   text-decoration: none;
   color: white;
   font-size: 20px;
 }
-.section2Hijo a:hover {
-  color: grey;
-}
 .section2Hijo p {
-  color: rgb(153, 147, 147);
   font-size: 20px;
+}
+
+.fecha {
+  color: rgb(153, 147, 147);
 }
 
 .section3 {
@@ -334,13 +334,21 @@ header {
   border: 1px solid black;
   font-size: 15px;
   background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+.inputFormulario:hover {
+  border-bottom: 2px solid #f50505;
+  border-top: 2px solid rgb(3, 47, 97);
 }
 .inputFormulario::placeholder {
-  color: white;
+  color: #fff;
 }
 .inputFormulario:focus {
   height: 50px;
   font-size: 22px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  transition: 1.5s;
 }
 
 .forma p {
@@ -350,20 +358,87 @@ header {
   line-height: 40px;
 }
 
-.boton {
-  background: linear-gradient(black, #991616);
-  margin-top: 15px;
-  font-size: 18px;
-  border: 0px;
+#inputState {
+  background-color: rgba(255, 255, 255, 0.15);
   color: white;
 }
-.boton:hover {
-  cursor: pointer;
-  transform: translateY(-10px);
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+#inputState option {
+  background-color: rgb(75, 5, 20);
+  color: #fff;
 }
-.boton:active {
-  transform: scale(1.2);
+
+.botonFormulario {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  position: relative;
+  font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.botonFormulario:hover {
+  letter-spacing: 0.25em;
+  background: #f30606;
+  color: #050000;
+  box-shadow: 0 0 45px #f50505;
+}
+
+.botonFormulario::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.botonFormulario span {
+  position: relative;
+  z-index: 1;
+}
+
+.botonFormulario i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.botonFormulario i::before {
+  content: "";
+  position: absolute;
+  border: 2px solid #fffb05;
+  width: 7px;
+  height: 4px;
+  top: -3.5px;
+  left: 80%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.botonFormulario:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.botonFormulario i::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #fffb05;
+  width: 7px;
+  height: 4px;
+  bottom: -3.5px;
+  left: 20%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.botonFormulario:hover i::after {
+  width: 20px;
+  left: 80%;
 }
 
 #inputState {
@@ -381,17 +456,51 @@ option {
 }
 
 /* ---------------------PAGINA TENDENCIAS --------*/
-.h2Tendencia {
-  color: #FFBA08;
-  text-align: center;
-  width: auto;
-  padding-top: 10px;
-  font-size: 35px;
-  text-shadow: 1px 1px 20px rgb(206, 193, 11);
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  --border-right:6px;
+  --text-stroke-color:rgba(247, 118, 14, 0.6);
+  --animation-color:#f0d01b;
+  --fs-size:2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button .hover-text {
+  animation: trending 2s linear forwards;
 }
 
 .mainTendencia {
   background-color: black;
+}
+
+.flexTendencia {
+  gap: 20px;
+  padding: 80px 0;
+  border-radius: 15px;
 }
 
 .videoTendencia {
@@ -401,6 +510,7 @@ option {
 
 .tendenciasFondo {
   background: linear-gradient(90deg, #000000, #141212);
+  position: relative;
 }
 
 .col a {
@@ -412,8 +522,8 @@ option {
   color: grey;
 }
 .col p {
-  color: rgb(153, 147, 147);
-  font-size: 16px;
+  color: white;
+  font-size: 20px;
 }
 
 /* ---------------------PAGINA Peliculax --------*/
@@ -640,6 +750,12 @@ option {
 .tituloFooter {
   color: white;
   font-size: 20px;
+  margin-right: 5rem;
+}
+
+.footerH2 {
+  display: flex;
+  align-items: center;
 }
 
 .derechos p {
@@ -786,19 +902,29 @@ option {
     margin-top: 6em;
   }
 }
+@media only screen and (max-width: 229px) {
+  .section2Hijo {
+    margin-top: 30px;
+  }
+}
 @media only screen and (min-width: 909px) {
   .caruselTamaño, .carusel1, .carusel2a, .carusel2b, .carusel2c, .carusel2d, .carusel2e {
     height: 930px;
   }
 }
 @media only screen and (min-width: 991px) {
-  .divImagen img:hover {
+  .divImagen a:hover {
     transform: scale(1.1);
     transition: 1s;
   }
-  .divImagen-1 img:hover {
+  .divImagen-1 a:hover {
     transform: scale(1.1);
     transition: 1s;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .section2 {
+    flex-wrap: wrap;
   }
 }
 /* MEDIA Y RESPONSIVE  TENDENCIAS.HTML ------------------------------------------------------- */
@@ -807,10 +933,65 @@ option {
     font-size: 2.5em;
   }
 }
-@media only screen and (min-width: 991px) {
-  .col img:hover {
-    transform: scale(1.05);
-    transition: transform 1s;
+@media only screen and (min-width: 605px) {
+  @keyframes trending {
+    from {
+      width: 0;
+      filter: none;
+    }
+    to {
+      width: 100%;
+      filter: drop-shadow(0 0 23px var(--animation-color));
+    }
+  }
+}
+@media only screen and (max-width: 604px) {
+  .h2Trending {
+    color: yellow;
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 752px) {
+  .hover-text {
+    border-right: none;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 767px) {
+  .flexTendencia {
+    gap: 20px;
+    padding: 80px 0;
+  }
+  .flexTendencia div {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 352px) {
+  .flexTendencia {
+    gap: 20px;
+    padding: 80px 0;
+  }
+  .flexTendencia div {
+    width: 160px;
+  }
+}
+@media only screen and (max-width: 536px) {
+  .flexTendencia {
+    gap: 20px;
+    padding: 80px 0;
+  }
+  .flexTendencia div {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 431px) {
+  .flexTendencia {
+    gap: 20px;
+    padding: 80px 0;
+  }
+  .flexTendencia div {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
   }
 }
 /* MEDIA Y RESPONSIVE  FORMULARIO.HTML ------------------------------------------------------- */
@@ -1172,5 +1353,151 @@ option {
     font-size: 50%;
   }
 }
+/* HOVER imagenes------------------------------------------------------------------------------- */
+[class^=imghvr-],
+[class*=" imghvr-"] {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+[class^=imghvr-] > img,
+[class*=" imghvr-"] > img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+[class^=imghvr-] figcaption,
+[class*=" imghvr-"] figcaption {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+[class^=imghvr-] figcaption h1,
+[class^=imghvr-] figcaption h2,
+[class^=imghvr-] figcaption h3,
+[class^=imghvr-] figcaption h4,
+[class^=imghvr-] figcaption h5,
+[class^=imghvr-] figcaption h6,
+[class*=" imghvr-"] figcaption h1,
+[class*=" imghvr-"] figcaption h2,
+[class*=" imghvr-"] figcaption h3,
+[class*=" imghvr-"] figcaption h4,
+[class*=" imghvr-"] figcaption h5,
+[class*=" imghvr-"] figcaption h6 {
+  color: #ffffff;
+}
+
+[class^=imghvr-] a,
+[class*=" imghvr-"] a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+[class^=imghvr-],
+[class*=" imghvr-"],
+[class^=imghvr-]:before,
+[class^=imghvr-]:after,
+[class*=" imghvr-"]:before,
+[class*=" imghvr-"]:after,
+[class^=imghvr-] *,
+[class*=" imghvr-"] *,
+[class^=imghvr-] *:before,
+[class^=imghvr-] *:after,
+[class*=" imghvr-"] *:before,
+[class*=" imghvr-"] *:after {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+/* imghvr-shutter-in-*
+   ----------------------------- */
+[class^=imghvr-shutter-in-]:after, [class^=imghvr-shutter-in-]:before,
+[class*=" imghvr-shutter-in-"]:after,
+[class*=" imghvr-shutter-in-"]:before {
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  content: "";
+}
+
+[class^=imghvr-shutter-in-]:after,
+[class*=" imghvr-shutter-in-"]:after {
+  top: 0;
+  left: 0;
+}
+
+[class^=imghvr-shutter-in-]:before,
+[class*=" imghvr-shutter-in-"]:before {
+  right: 0;
+  bottom: 0;
+}
+
+[class^=imghvr-shutter-in-] figcaption,
+[class*=" imghvr-shutter-in-"] figcaption {
+  opacity: 0;
+  z-index: 1;
+}
+
+[class^=imghvr-shutter-in-]:hover figcaption,
+[class*=" imghvr-shutter-in-"]:hover figcaption {
+  opacity: 1;
+  transition-delay: 0.21s;
+}
+
+/* imghvr-shutter-in-horiz
+   ----------------------------- */
+.imghvr-shutter-in-horiz:after, .imghvr-shutter-in-horiz:before {
+  width: 0;
+  height: 100%;
+}
+
+.imghvr-shutter-in-horiz:hover:after, .imghvr-shutter-in-horiz:hover:before {
+  width: 50%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.puntaje {
+  color: yellow;
+  font-weight: 600;
+}
+
+.divImagen {
+  display: flex;
+}
+
+/*# sourceMappingURL=imagehover.css.map */
+/*# sourceMappingURL=imagehover.css.map */
 
 /*# sourceMappingURL=style.css.map */

@@ -123,6 +123,9 @@
       margin-top: 6em;
     }
   }
+  @media only screen and (max-width: 229px) {.section2Hijo{margin-top: 30px;}
+  
+  }
   
   @media only screen and (min-width: 909px) {
     .caruselTamaño, .carusel1, .carusel2a, .carusel2b, .carusel2c, .carusel2d, .carusel2e {
@@ -131,13 +134,17 @@
   }
   
   @media only screen and (min-width: 991px) {
-    .divImagen  img:hover {
+    .divImagen  a:hover {
       transform: scale(1.1);
       transition: 1s;
-    } .divImagen-1  img:hover {
+    } .divImagen-1  a:hover {
       transform: scale(1.1);
       transition: 1s;
     }
+  }
+
+  @media only screen and (max-width: 800px) {.section2{flex-wrap: wrap;}
+  
   }
   
   
@@ -154,12 +161,59 @@
     }
   }
   
-  @media only screen and (min-width: 991px) {
-    .col img:hover {
-      transform: scale(1.05);
-      transition: transform 1s;
-    }
-  }
+  
+@media only screen and (min-width: 605px) {@keyframes trending {from{width: 0;
+  filter: none}to{width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))}
+  
+}
+
+}
+
+@media only screen and (max-width: 604px) {.h2Trending{color: yellow;font-size: 25px;}
+
+}
+
+@media only screen and (max-width: 752px) {.hover-text{border-right:none;}
+
+}
+
+
+@media only screen and (max-width: 991px)and (min-width: 767px) {
+
+  .flexTendencia{gap: 20px;padding: 80px 0;
+div{width: 200px;}
+  
+  }} 
+
+
+  @media only screen and (max-width: 767px)and (min-width: 352px)  {
+
+    .flexTendencia{gap: 20px;padding: 80px 0;
+  div{width: 160px;}
+    
+    }} 
+
+
+    @media only screen and (max-width: 536px)  {
+
+      .flexTendencia{gap: 20px;padding: 80px 0;
+    div{width: 200px;}
+      
+      }} 
+
+
+
+      @media only screen and (max-width: 431px)  {
+
+        .flexTendencia{gap: 20px;padding: 80px 0;
+      div{width: 80%;margin: auto;margin-top: 30px;}
+        
+        }} 
+      
+    
+  
+
 
 
     
