@@ -271,15 +271,6 @@ strong {
   color: rgb(153, 147, 147);
 }
 
-.section3 {
-  margin: auto;
-  max-width: 1200px;
-  padding: 60px 0;
-  overflow: hidden;
-  width: 90%;
-  padding: 30px 0;
-}
-
 .segundo {
   background: linear-gradient(0deg, #370617, #080000);
 }
