@@ -96,8 +96,22 @@ header {
 }
 
 .botonToggle {
-  background: linear-gradient(180deg, #f03232, #771111);
+  background: linear-gradient(180deg, #000000, #771111);
   border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spanB {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFBA08;
+}
+
+.spanI {
+  height: 30px;
+  width: 30px;
 }
 
 /* hero carusel imagenes------------------------------------------------------------------------------- */
@@ -851,6 +865,17 @@ option {
   }
   .listaEnlaces li a {
     font-size: 20px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .spanI {
+    display: none;
+  }
+}
+@media only screen and (max-width: 256px) {
+  .spanB {
+    font-size: 12px;
+    font-weight: 600;
   }
 }
 /* MEDIA Y RESPONSIVE  INDEX.HTML ------------------------------------------------------- */
