@@ -505,31 +505,41 @@ option {
 .videoTendencia {
   width: 100%;
   height: 100vh;
-  display: flex;
-  position: relative;
   text-align: center;
+  position: relative;
   background-image: url("https://res.cloudinary.com/dtzqfg4nr/image/upload/v1669408497/21034617_bz7fyz.jpg");
   background-position: center;
   background-size: cover;
 }
-.videoTendencia img {
-  height: 100%;
-  width: 33%;
+.videoTendencia a {
+  text-decoration: none;
 }
-
-.buttonTrend {
-  color: #f0d01b;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin-top: 200px;
+.videoTendencia p {
+  color: #FFBA08;
+  font-weight: 700;
+  font-size: 20px;
+}
+.videoTendencia img {
+  height: 80%;
+  width: 100%;
 }
 
 .tendenciasFondo {
   background: linear-gradient(90deg, #000000, #141212);
   position: relative;
+}
+
+.col a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+.col a:hover {
+  color: grey;
+}
+.col p {
+  color: white;
+  font-size: 20px;
 }
 
 .button-54 {
@@ -548,6 +558,7 @@ option {
   -webkit-user-select: none;
   touch-action: manipulation;
   background-color: #370617;
+  display: none;
 }
 .button-54 a {
   text-decoration: none;
@@ -559,19 +570,6 @@ option {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
-}
-
-.col a {
-  text-decoration: none;
-  color: white;
-  font-size: 24px;
-}
-.col a:hover {
-  color: grey;
-}
-.col p {
-  color: white;
-  font-size: 20px;
 }
 
 /* ---------------------PAGINA Peliculax --------*/
@@ -1035,6 +1033,14 @@ option {
       width: 100%;
       filter: drop-shadow(0 0 23px var(--animation-color));
     }
+  }
+}
+@media only screen and (max-width: 604px) {
+  .button-3 {
+    display: none;
+  }
+  .button-54 {
+    display: inline;
   }
 }
 @media only screen and (max-width: 604px) {
