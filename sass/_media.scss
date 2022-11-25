@@ -196,7 +196,7 @@
   
           .section2{
         div{width: 80%;margin: auto;margin-top: 30px;
-       } 
+       } figcaption i{padding-top: 100px;}
           
           }} 
         
@@ -270,7 +270,11 @@ div{width: 200px;}
         }} 
       
     
-  
+        @media (min-width: 768px) {
+          .button-54 {
+            padding: 0.25em 0.75em;
+          }
+        }
 
 
 
