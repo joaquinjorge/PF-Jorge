@@ -17,16 +17,17 @@
   
   .videoTendencia {
     width: 100%;
-    height:100vh;
+    height:500px;
    text-align: center;
-    position: relative;
+   
+    
     a{text-decoration: none;}
     p{color: $titulo;font-weight: 700;font-size: 20px;}
     
     
    
     background-image: url('https://res.cloudinary.com/dtzqfg4nr/image/upload/v1669408497/21034617_bz7fyz.jpg');background-position: center;background-size: cover;
-    background-attachment:fixed;
+    
     img{height: 80%;width:100%;}
   } 
  

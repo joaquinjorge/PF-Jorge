@@ -467,13 +467,11 @@ option {
 
 .videoTendencia {
   width: 100%;
-  height: 100vh;
+  height: 500px;
   text-align: center;
-  position: relative;
   background-image: url("https://res.cloudinary.com/dtzqfg4nr/image/upload/v1669408497/21034617_bz7fyz.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .videoTendencia a {
   text-decoration: none;
@@ -1057,6 +1055,12 @@ option {
 @media (min-width: 768px) {
   .button-54 {
     padding: 0.25em 0.75em;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .videoTendencia .pinguino {
+    height: 60%;
+    margin-top: 100px;
   }
 }
 /* MEDIA Y RESPONSIVE  FORMULARIO.HTML ------------------------------------------------------- */
