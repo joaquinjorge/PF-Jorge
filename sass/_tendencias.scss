@@ -5,43 +5,6 @@
 /* ---------------------PAGINA TENDENCIAS --------*/
 
 
-.button {
-  margin: 0;
-  height: auto;
-  background: transparent;
-  padding: 0;
-  border: none;
-  --border-right:6px;
-  --text-stroke-color:rgba(247, 118, 14, 0.6);
-  --animation-color:#f0d01b;
-  --fs-size:2em;
-  letter-spacing: 3px;
-  text-decoration: none;
-  font-size: var(--fs-size);
-  font-family: "Arial";
-  position: relative;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
-}
-
-.hover-text {
-  position: absolute;
-  box-sizing: border-box;
-  content: attr(data-text);
-  color: var(--animation-color);
-  width: 0%;
-  inset: 0;
-  border-right: var(--border-right) solid var(--animation-color);
-  overflow: hidden;
-  transition: 0.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
-}
-
-.button .hover-text {
-  animation: trending 2s linear forwards;
-}
-
   
   .mainTendencia {
     background-color: black;
@@ -63,6 +26,7 @@
     
    
     background-image: url('https://res.cloudinary.com/dtzqfg4nr/image/upload/v1669408497/21034617_bz7fyz.jpg');background-position: center;background-size: cover;
+    background-attachment:fixed;
     img{height: 80%;width:100%;}
   } 
  
@@ -94,22 +58,22 @@
 
   .button-54 {
     font-family: "Open Sans", sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
-    color:$titulo;
+    color:rgba($color: $titulo, $alpha: 0.8);
     cursor: pointer;
-    border: 3px solid;
+    border: 3px solid ;
     padding: 0.25em 0.5em;
-    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    
     position: relative;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    background-color:#370617;
-    a{text-decoration: none;color: $titulo;font-weight: 600;}
-    display: none;
+    background: linear-gradient(180deg, #000000, #771111);
+    a{text-decoration: none;color: $titulo;}
+    
   }
   
   .button-54:active {
@@ -118,4 +82,4 @@
     left: 5px;
   }
   
-  
+  .flechas img{width: 60px;height: 30px;;margin: auto;}
