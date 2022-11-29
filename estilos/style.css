@@ -236,12 +236,8 @@ strong {
 .divImagen {
   height: 350px;
   width: 100%;
-  border: 5px solid #370617;
+  border: 3px solid #b30d07;
   border-radius: 4px;
-}
-
-.divImagena {
-  border: 5px solid #682186;
 }
 
 .divImagen img {
@@ -266,7 +262,7 @@ strong {
 }
 
 .segundo {
-  background: linear-gradient(0deg, #370617, #080000);
+  background: linear-gradient(180deg, #080000, #370617);
 }
 
 /* -----------PAGINA FORMULARIO DE LOGIN/REGISTER------------- */
@@ -469,9 +465,8 @@ option {
   width: 100%;
   height: 500px;
   text-align: center;
-  background-image: url("https://res.cloudinary.com/dtzqfg4nr/image/upload/v1669408497/21034617_bz7fyz.jpg");
-  background-position: center;
-  background-size: cover;
+  background-image: url("https://res.cloudinary.com/dtzqfg4nr/image/upload/v1669733584/21034617_i0m5xk.jpg");
+  background-position: bottom;
 }
 .videoTendencia a {
   text-decoration: none;
@@ -487,7 +482,7 @@ option {
 }
 
 .tendenciasFondo {
-  background: linear-gradient(90deg, #000000, #141212);
+  background: linear-gradient(180deg, #080000, #370617);
   position: relative;
 }
 
@@ -524,7 +519,6 @@ option {
   text-decoration: none;
   color: #FFBA08;
 }
-
 .button-54:active {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
@@ -806,11 +800,7 @@ option {
   color: #FF0000;
 }
 
-.footerPeliculax {
-  background-color: #370617;
-}
-
-.footerTendencia, .footerFormulario {
+.footerPeliculax, .footerFormulario {
   background: linear-gradient(0deg, #370617, #080000);
 }
 

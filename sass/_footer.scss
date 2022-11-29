@@ -56,14 +56,11 @@
 
 
   
-  .footerPeliculax {
-    background-color: #370617;
+ .footerPeliculax{
+    background: linear-gradient(0deg, #370617, #080000);
   }
   
-  .footerTendencia, .footerFormulario {
-    background: linear-gradient(0deg, #370617, #080000);
-    
-  }
+  .footerFormulario{@extend .footerPeliculax}
   
 
 
